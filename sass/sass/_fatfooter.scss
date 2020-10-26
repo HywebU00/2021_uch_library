@@ -1,0 +1,141 @@
+.fatfooter {
+    @include make-fatfooter($fatfooter-length, 100%);
+    @extend %clearfix;
+    overflow: hidden;
+    padding-bottom: 1em;
+    margin: 0 auto;
+    background: $fatfooterBgColor;
+      @include screen('mobile') {
+        display: none;
+    }
+    .container {
+        overflow: hidden;
+        @include box-sizing;
+        @include gutter;
+    }
+    // 按鈕
+    .btn-fatfooter {
+        font-size: .813em;
+        display: block;
+        min-width: 6em;
+        color: #FFF;
+        border: none;
+        background: none;
+        position: relative;
+        margin:0 auto;
+        top:10px;
+        z-index: 90;
+        text-indent: -9999px;
+        height: 50px;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 45px;
+            left: 50%;
+            top: 0;
+            background:url(../images/icon_arrow_left_invert.png) no-repeat center;
+            background-size: contain;
+            margin-left: -15px;
+            transition: .3s ease-out;
+            transform: rotate(90deg);
+        }
+        &:hover,
+        &:focus {
+            background: darken($secondaryColor, 10);
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            box-shadow: none;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            border-radius: $rounded-angle
+        }
+        &.close {
+            &:before {
+                transform: rotate(270deg) !important;
+                top: 5px;
+            }
+        }
+    }
+    nav {
+        overflow: hidden;
+        display: block;
+        position: relative;
+        padding: 3em 0 0 2em;
+        @include box-sizing;
+        @include screen('mobile') {
+            padding: 1em 0;
+        }
+        ul {
+            @include li-reset;
+            @include screen('mobile') {
+                width: 100%;
+                display: block;
+                margin: 0px auto;
+            }
+            li {
+                display: inline-block;
+                text-align: left;
+                vertical-align: top;
+                margin: 0 -5px 1em 0;
+                @include box-sizing;
+                @include screen('mobile') {
+                    display: block;
+                    margin:0 0 .4em
+                }
+                a {
+                    line-height: 1.5;
+                    display: block;
+                    font-weight: bold;
+                    padding: .5em 0px;
+                    color: $fatfooterNavColor;
+                    @include box-sizing;
+                    &:hover{
+                        box-shadow: none;
+                        color: darken($fatfooterNavColor, 10);
+                    }
+                }
+                ul {
+                    margin-top: 5px;
+                    @include screen('mobile') {
+                        width: auto;
+                    }
+                    li {
+                        display: block;
+                        margin: 0;
+                        border: none;
+                        background: none;
+                        width: 100%;
+                        @include screen('mobile') {
+                            display:inline-block;
+                            width:auto;
+                        }
+                        a {
+                            display: block;
+                            color: $fatfooterSubNavColor;
+                            font-weight: normal;
+                            text-align: left;
+                            font-size: .938em;
+                            line-height: 1.5em;
+                            padding: .5em .2em;
+                            background: none;
+                            @include screen('mobile') {
+                                padding:.3em .2em;
+                            }
+                            &:hover{
+                                color:#fff;
+                            }
+                        }
+                    }
+                    //第三層關閉
+                    ul {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
