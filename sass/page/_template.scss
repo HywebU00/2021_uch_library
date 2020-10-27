@@ -30,8 +30,6 @@ body {
         overflow: hidden;
         overflow-y: auto;
     }
-
-
 }
 
 // 整體共用container樣式，請注意首頁切版頁面的整齊
@@ -47,7 +45,7 @@ body {
 
     // 可先設定一個中央區塊最大寬，限制accesskey對齊
     @include screen('mobile') {
-        padding-top: 55px;
+        padding-top: 60px;
         background-image: none;
     }
     h2 {
@@ -60,12 +58,12 @@ body {
         }
     }
     
-    .reader_service{
-        padding-left: 3.5em;
-        @include screen('mobile'){
-            padding-left: 0;
-        }
-    }
+    // .reader_service{
+    //     padding-left: 3.5em;
+    //     @include screen('mobile'){
+    //         padding-left: 0;
+    //     }
+    // }
 
 }
 

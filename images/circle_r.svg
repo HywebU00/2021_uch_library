@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="206" y="724" width="400" height="400" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="206" y="724" width="400" height="400" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDQwMCA0MDAiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50KTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iNDAwIiB5MT0iMTEwLjk1NCIgeDI9IjAiIHkyPSIyODkuMDQ2IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iLTAuMjUiIHN0b3AtY29sb3I9IiNmZmU4ZDIiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxLjI1IiBzdG9wLWNvbG9yPSIjZWQ1NzRiIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIi8+Cjwvc3ZnPgo="/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="形狀_36_拷貝_3" data-name="形狀 36 拷貝 3" class="cls-1" d="M405.253,1062.87a138.546,138.546,0,0,1-72.057-20.18c-65.729-39.86-86.776-125.765-46.918-191.5a139.489,139.489,0,0,1,191.489-46.92c65.729,39.861,86.777,125.769,46.919,191.5a139.458,139.458,0,0,1-119.433,67.1M406.331,724a200.124,200.124,0,0,0-171.373,96.274c-57.192,94.318-26.99,217.587,67.322,274.777a200.144,200.144,0,0,0,274.762-67.32c57.192-94.322,26.992-217.588-67.322-274.784A198.792,198.792,0,0,0,406.331,724" transform="translate(-206 -724)"/>
+</svg>
