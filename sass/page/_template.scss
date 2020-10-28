@@ -49,16 +49,25 @@ body {
         background-image: none;
     }
     h2 {
-        font-size: 2.125em;
-        line-height: 1.25em;
-        letter-spacing: 2px;
-        color:$primaryColor;
-        &.title{
+        &.title {
             font-size: 1.625em;
             font-weight: normal;
             color: $color-word;
             position: relative;
             padding-top: 28px;
+            text-align: center;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 50%;
+                margin-left: -10px;
+                display: block;
+                width: 20px;
+                height: 19px;
+                background: url(../images/icon_title.png) center no-repeat;
+                background-size: contain;
+            }
         }
     }
     

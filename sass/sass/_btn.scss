@@ -2,7 +2,7 @@
 $btn-font-color:$color-word;
 $btn-border:darken($color-word, 5);
 $btn-padding:.5em 1em;
-$btn-radius:.125em;
+$btn-radius:30px;
 // 按鈕外框
 .btn_grp {
     text-align: center;
@@ -49,7 +49,7 @@ $btn-radius:.125em;
     line-height: normal;
     width: auto;
     padding: $btn-padding;
-    min-width: 4em;
+    min-width: 5em;
     margin: .25em .1em;
 
     i {
@@ -97,7 +97,7 @@ $btn-radius:.125em;
 }
 .btn-submit {
     @extend %btn;
-    @include btn_setting(lighten($primaryColor, 5), #FFF);
+    @include btn_setting($primaryColor, #FFF);
 }
 .btn-reset {
     @extend %btn;

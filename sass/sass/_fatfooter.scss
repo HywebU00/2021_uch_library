@@ -95,7 +95,7 @@
                     @include box-sizing;
                     &:hover{
                         box-shadow: none;
-                        color: darken($fatfooterNavColor, 10);
+                        color: #fff;
                     }
                 }
                 ul {

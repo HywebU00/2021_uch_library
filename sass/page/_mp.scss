@@ -26,7 +26,10 @@
         left:0;
         background: url(../images/bg-01.svg) center bottom no-repeat;
         background-size: cover;
-        z-index: 0;
+        z-index: -2;
+        @include screen('mobile'){
+            z-index: 0;
+        }
     }
     .parallax {
         position: absolute;
@@ -35,7 +38,7 @@
         height: 100%;
         top: 0;
         left: calc((100% - 1100px) / 2);
-        z-index: 1;
+        z-index: -1;
         @media screen and (max-width: 1100px){
             left: 0;
         }
@@ -136,33 +139,12 @@
         }
     }
 
-    h2 {
-        &.title {
-            font-size: 1.625em;
-            font-weight: normal;
-            color: $color-word;
-            position: relative;
-            padding-top: 28px;
-            text-align: center;
-            &:before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 50%;
-                margin-left: -10px;
-                display: block;
-                width: 20px;
-                height: 19px;
-                background: url(../images/icon_title.png) center no-repeat;
-                background-size: contain;
-            }
-        }
-    }
+    
 }
 
 .main_image {
     position: relative;
-
+    z-index: 10;
     .container {
         background: #fff;
         border-radius: $rounded-angle;
@@ -488,7 +470,8 @@
             transition: background .3s ease;
             border-radius: 30px;
 
-            &:hover {
+            &:hover,
+            &:focus{
                 background: $primaryColor;
             }
         }
@@ -534,8 +517,12 @@
             transition: all .3s;
             background: #fff;
 
-            &:hover {
+            &:hover,
+            &:focus {
                 border-radius: 50px;
+            }
+            &:focus{
+                    outline: 1px solid $aHover;
             }
         }
 

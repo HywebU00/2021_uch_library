@@ -20,6 +20,7 @@
     width: 30px;
     height: 45px;
     background-size:contain;
+    border-radius: 0;
     &:hover, &:focus {
         border: none !important;
         outline:none;
@@ -164,6 +165,7 @@
     }
     .slick-prev, .slick-next{
         background-color: rgba(255,255,255,0);
+        border-radius: 0;
     }
     .slick-prev {
         left: -7px;

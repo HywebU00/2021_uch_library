@@ -1,6 +1,6 @@
 $form_title_width :150px; // 表單title寬度
 
-@mixin formStyle($f_color:$color-word, $f_border:$color-gray, $f_radius:$btn-radius) {
+@mixin formStyle($f_color:$color-word, $f_border:$color-gray, $f_radius:$rounded-angle) {
     color: $f_color;
     font-size: 1em;
     border: 1px $color-gray solid;
