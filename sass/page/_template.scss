@@ -54,7 +54,11 @@ body {
         letter-spacing: 2px;
         color:$primaryColor;
         &.title{
-            text-align: center;
+            font-size: 1.625em;
+            font-weight: normal;
+            color: $color-word;
+            position: relative;
+            padding-top: 28px;
         }
     }
     

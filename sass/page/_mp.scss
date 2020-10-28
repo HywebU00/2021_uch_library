@@ -15,7 +15,6 @@
     background: url(../images/bg-01.svg) center bottom no-repeat;
     background-size: cover;
     position: relative;
-    z-index: -2;
     overflow: hidden;
     @include screen('mobile') {
         z-index: 0;
@@ -134,7 +133,7 @@
             color: $color-word;
             position: relative;
             padding-top: 28px;
-
+            text-align: center;
             &:before {
                 content: "";
                 position: absolute;
