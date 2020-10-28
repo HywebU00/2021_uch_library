@@ -276,7 +276,7 @@ div.tag {
 }
 
 .apply_form {
-    width: 80%;
+    @extend %bg_1;
     margin: 0 auto;
 
     @include screen('mobile') {

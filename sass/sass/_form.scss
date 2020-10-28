@@ -62,6 +62,22 @@ select::-ms-expand {
             width: 100%;
         }
 
+        &.form_inline {
+
+            input[type="text"],
+            input[type="date"],
+            select {
+                width: auto;
+                min-width: 100px;
+                display: inline-block;
+                margin-right: 5px;
+                @include screen('xs_mobile') {
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+
         // 第二層的設定
         .form_grp {
             min-height: 2.5em;
@@ -74,6 +90,7 @@ select::-ms-expand {
                 &.form_inline {
 
                     input[type="text"],
+                    input[type="date"],
                     select {
                         width: auto;
                         min-width: 100px;
@@ -179,10 +196,12 @@ select::-ms-expand {
                 width: 100%;
                 display: block;
             }
+
             &+.datepick {
                 margin-left: .3em;
                 margin-right: 0;
                 padding-right: 0;
+
                 &:before {
                     content: "~";
                     font-size: 1.5em;
@@ -233,6 +252,10 @@ select::-ms-expand {
                 }
             }
         }
+        .annotation{
+            font-size: .875em;
+            color:$primaryColor;
+        }
     }
 }
 
@@ -260,7 +283,9 @@ form,
                 display: inline-block;
                 margin: .2em .5em 0 0;
             }
-            .form_title, .form_content{
+
+            .form_title,
+            .form_content {
                 display: inline-block;
             }
         }
@@ -281,11 +306,14 @@ form,
             select {
                 width: auto;
             }
-            .form_title, .form_content{
+
+            .form_title,
+            .form_content {
                 display: inline-block;
             }
-            input[type="submit"]{
-                margin:0 0 .3em 0;
+
+            input[type="submit"] {
+                margin: 0 0 .3em 0;
             }
 
         }
@@ -322,7 +350,9 @@ form,
             display: inline-block;
             margin-right: .5em;
         }
-        .form_title, .form_content{
+
+        .form_title,
+        .form_content {
             display: inline-block;
         }
 
@@ -381,8 +411,10 @@ textarea,
 select,
 button {
     @include formStyle(); // 預設載入formStyle設定
-    &.error{
+
+    &.error {
         box-shadow: 0px 0px 0px 2px $color-red;
+
         +.notice_warning {
             background: none;
             color: $color-red;
@@ -433,7 +465,8 @@ input[type="button"],
     {
     @extend %btn;
     @include btn_setting($form-focus, #FFF);
-    &.back{
+
+    &.back {
         background-color: $importantColor;
     }
 }
@@ -505,9 +538,11 @@ input[type="radio"] {
     background-color: #f7f6ee;
     border: 2px solid $color-gray;
 }
-input[type="checkbox"]{
+
+input[type="checkbox"] {
     border-radius: 4px;
 }
+
 input[type="radio"] {
     border-radius: 50%;
 }
@@ -639,10 +674,12 @@ abbr[title] {
         position: relative;
         display: inline-block;
         vertical-align: top;
+
         &+.datepick {
             margin-left: 1em;
             margin-right: 0;
             padding-right: 0;
+
             &:before {
                 content: "~";
                 font-size: 1.5em;
@@ -665,6 +702,7 @@ abbr[title] {
                 right: .5em;
             }
         }
+
         button {
             position: absolute;
             padding: .37em .1em !important;
@@ -675,20 +713,23 @@ abbr[title] {
             border: none;
             width: auto;
             pointer-events: none;
-            i:before{
+
+            i:before {
                 width: 1.5em;
                 height: 1.5em;
             }
         }
     }
 }
-.search_grp{
-    padding:1em;
+
+.search_grp {
+    padding: 1em;
+
     .form_grp,
     .check_grp,
     .radio_grp,
     .btn_grp,
-    .upload_grp{
+    .upload_grp {
         margin-bottom: .5em;
     }
 }
