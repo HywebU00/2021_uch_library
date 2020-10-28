@@ -14,12 +14,17 @@ h3.title {
 }
 
 .cp {
-    padding-bottom: 4em;
+    padding: 2em 0;
 
     ol {
         ul {
             list-style: none;
         }
+    }
+    .teacher_name{
+        font-size: 1.25em;
+        font-weight: bold;
+        padding:1em 0;
     }
 
     .pic {
@@ -830,4 +835,16 @@ div.tag {
             }
         }
     }
+}
+.add_btn{
+    background:$importantColor;
+    margin:1em 0;
+    color:#fff;
+}
+.recommended_list{
+    // td{
+    //     &.check{
+    //         text-align: center;
+    //     }
+    // }
 }
