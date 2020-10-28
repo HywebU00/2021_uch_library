@@ -433,6 +433,9 @@ input[type="button"],
     {
     @extend %btn;
     @include btn_setting($form-focus, #FFF);
+    &.back{
+        background-color: $importantColor;
+    }
 }
 
 input[type="submit"] {
@@ -456,6 +459,7 @@ input[type="file"]:focus,
 input[type="tel"]:focus,
 input[type="password"]:focus,
 input[type="date"]:focus,
+input[type="email"]:focus,
 textarea:focus,
 select:focus {
     border: 1px solid lighten($form-focus, 10);
@@ -501,7 +505,9 @@ input[type="radio"] {
     background-color: #f7f6ee;
     border: 2px solid $color-gray;
 }
-
+input[type="checkbox"]{
+    border-radius: 4px;
+}
 input[type="radio"] {
     border-radius: 50%;
 }
@@ -532,7 +538,7 @@ input[type="radio"]:checked {
 input[readonly],
 input[disable] {
     background: lighten($color-gray, 15);
-    color: darken($color-gray, 10);
+    //color: darken($color-gray, 10);
     border-color: darken($color-gray, 10);
 
     &~label {
