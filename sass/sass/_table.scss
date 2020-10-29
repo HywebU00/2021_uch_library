@@ -62,6 +62,7 @@ table {
             padding-left: 35% !important;
             white-space: normal;
             text-align: left;
+            min-height: 2.4em;
             &:before {
                 content: attr(data-title);
                 position: absolute;

@@ -1,6 +1,6 @@
 .lp {
-    padding-bottom: 4em;
-
+    overflow: hidden;
+    padding-bottom: 2em;
     table {
         td {
             a {
@@ -225,15 +225,14 @@
             }
 
             a {
-                background: #fff;
-                color: darken($primaryColor, 10);
+                background: #f1f1f1;
                 display: inline-block;
                 padding: .65em 1em;
                 transition: all .3s;
                 margin: 0 .2em;
                 min-width: 5.5em;
                 border-radius: 30px;
-
+                color: $color-word;
                 @include screen("mobile") {
                     margin: 0 .25em;
                 }
