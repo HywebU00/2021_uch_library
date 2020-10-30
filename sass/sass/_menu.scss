@@ -13,6 +13,7 @@
         text-align: center;
         margin: 0;
         padding: 0;
+        position: relative;
         @media screen and (max-width: 1100px){
             text-align: left;
         }
@@ -65,28 +66,38 @@
             }
         }
         ul {
-            display: none;
+            display: block;
             overflow: visible;
             width: 200px;
-            background: $secondaryColor;
-            padding: 0;
+            background: #fff;
+            padding: 8px;
             z-index: 999999;
             position: absolute;
             top: auto;
-            left: 0;
+            left: 15px;
             list-style: none;
             text-align: left;
             animation: showMenu .3s ease-out;
+            width: calc(100% - 30px);
+            border-radius: $rounded-angle;
+            box-shadow: 0 0 15px rgba(0, 0, 0, .15);
             ul {
-                top: 0;
-                left: 170px;
+                // top: 0;
+                // left: 170px;
                 animation: none;
+                display: block;
+                position: static;
+                font-size: .875em;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+                border-radius:0;
             }
         }
     }
     // 預設選單 li
     li {
-        position: relative;
+        //position: relative;
         a {
             display: block;
             outline: none;
@@ -94,14 +105,29 @@
         }
         // 第二層選單樣式
         li {
-            float: none;
+            display: inline-block;
+            width: 18.4%;
+            margin: .5em 0 .5em 1%;
+            vertical-align: top;
+            line-height: 1.5;
+            // background: $color-bg;
+            // border-radius: $rounded-angle;
             a {
-                padding: .6em 1.2em;
-                color: #FFF;
-                font-weight: bold;
+                padding: .4em 1em;
+                color: $color-word;
                 &:hover, &:focus {
-                    background: $aHover;
+                    color:$secondaryColor;
+                    
                 }
+            }
+            //第三層選單
+            li{
+                display: block;
+                width: 100%;
+                border-bottom: 1px dashed $color-line;
+                    a{
+                        background: none;
+                    }
             }
         }
         li.hasChild {
@@ -110,19 +136,21 @@
             }
             >a {
                 padding-right: 2em;
-                &:hover,
-                &:focus {
-                    background: $primaryColor;
-                }
+                position: relative;
+                display: inline-block;
+                // &:hover,
+                // &:focus {
+                //     background: $primaryColor;
+                // }
                 &:after {
                     content: '';
                     position: absolute;
                     right: 10px;
-                    top: 1.3em;
+                    top: .85em;
                     width: 6px;
                     height: 6px;
-                    border: 2px solid #FFF;
-                    transform: rotate(45deg);
+                    border: 2px solid $color-word;
+                    transform: rotate(135deg);
                     border-bottom: none;
                     border-left: none;
                 }
@@ -408,9 +436,9 @@
 //animation
 @keyframes showMenu {
     0% {
-        left: 20px;
+        left: 30px;
     }
     100% {
-        left: 0px;
+        left: 15px;
     }
 }

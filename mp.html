@@ -98,13 +98,25 @@
                 <!-- menu Start -->
                 <nav class="menu">
                     <ul>
-                        <li><a href="#">關於圖書館</a>
+                        <li><a href="#">關於圖書館</a></li>
+                        <li class="hasChild"><a href="#">最新消息</a>
                             <ul>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單第二層選單第二層選單</a></li>
+                                <li><a href="http://www.google.com">第二層有連結</a>
+                                    <ul>
+                                        <li><a href="#">第三層選單</a></li>
+                                        <li><a href="#">第三層選單</a></li>
+                                        <li><a href="#">第三層選單</a></li>
+                                        <li><a href="#">第三層選單</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
                                 <li><a href="#">第二層選單</a></li>
                                 <li><a href="#">第二層選單</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">最新消息</a></li>
                         <li><a href="#">讀者服務</a></li>
                         <li><a href="#">電子資源</a></li>
                         <li><a href="#">推廣活動</a></li>
@@ -1138,27 +1150,26 @@
                             <h2>圖書館開放時間</h2>
                             <div class="schedule">
                                 <h3>平日開放時間</h3>
-                                <div class="schedule_content">週一 ~ 週五 09:00-17:00<br/> 週六日 休館日</div>
+                                <div class="schedule_content">週一 ~ 週五 09:00-17:00<br /> 週六日 休館日</div>
                             </div>
                             <div class="schedule">
                                 <h3>特殊休館日</h3>
-                                <div class="schedule_content">4/1 師生運動會補假<br/>
-                                     4/2-4/3 調整彈性放假<br/>
-                                     4/4 兒童節&清明節<br/>
-                                     6/25 端午節<br/>
-                                     6/26 調整彈性放假
+                                <div class="schedule_content">4/1 師生運動會補假<br />
+                                    4/2-4/3 調整彈性放假<br />
+                                    4/4 兒童節&清明節<br />
+                                    6/25 端午節<br />
+                                    6/26 調整彈性放假
                                 </div>
                             </div>
                             <div class="schedule">
                                 <h3>校史館開放時間</h3>
-                                <div class="schedule_content">週一 ~ 週五 09:00-16:00<br/>週末及國定假日休館</div>
+                                <div class="schedule_content">週一 ~ 週五 09:00-16:00<br />週末及國定假日休館</div>
                             </div>
-                        </div>  
+                        </div>
                         <div class="col calendar_wrap">
                             <div class="calendar">
-                               
                             </div>
-                            <span class="closed">休館日</span> 
+                            <span class="closed">休館日</span>
                         </div>
                     </div>
                 </div>
@@ -1328,9 +1339,9 @@
         $('.calendar').pignoseCalendar({
             lang: 'ch',
             disabledDates: [
-            '2020-10-09',
-            '2020-10-10',
-            '2020-10-11'
+                '2020-10-09',
+                '2020-10-10',
+                '2020-10-11'
             ]
         });
     });
