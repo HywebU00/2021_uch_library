@@ -9,11 +9,11 @@
     background-color: #f2f2f2;
     position: relative;
     @include box-sizing;
-    border-radius: 4px;
+    border-radius: $rounded-angle;
     border: none;
     &:before {
         position: absolute;
-        top: .7em;
+        top: 1em;
         left: .8em;
         display: block;
         vertical-align: middle;
