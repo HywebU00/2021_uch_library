@@ -73,6 +73,7 @@ $(function() {
         _body.removeClass('noscroll');
         _overlay.fadeOut();
         liHasChild.children('ul').hide();
+        liHasChild.children('.third_menu').show();
     }
     // 打開選單動作
     _sidebarCtrl.click(function(e) {
@@ -104,6 +105,7 @@ $(function() {
     var liHasChild_level1 = $('aside .menu ul').children('li.hasChild'),
         liHasChild_level2 = $('aside .menu ul ul').children('li.hasChild'),
         liHasChild_level3 = $('aside .menu ul ul ul').children('li.hasChild'),
+        liHasChild_level4 = $('aside .menu ul ul ul ul').children('li.hasChild'),
         subMenuWidth = liHasChild.first().children('ul').outerWidth();
     // 切換PC/Mobile 選單
     function mobileMenu() {
@@ -144,6 +146,11 @@ $(function() {
             });
             // 第三層選單
             liHasChild_level3.off().on('click', function(e) {
+                $(this).siblings('li').children('ul').stop(true, true).slideUp('600', 'easeOutQuint');
+                $(this).children('ul').stop(true, true).slideDown('600', 'easeOutQuint');
+            });
+            // 第四層選單
+            liHasChild_level4.off().on('click', function(e) {
                 e.preventDefault();
             });
             //手機版第第一層點了不會進入內頁，拿掉第一層的連結無作用
@@ -169,11 +176,11 @@ $(function() {
             // 副選單滑出
             liHasChild.on({
                 mouseenter: function() {
-                    $(this).children('ul').stop(true, false).fadeIn();
+                    $(this).children('ul').stop(true, false).not(".third_menu").fadeIn();
                 },
                 mouseleave: function() {
                     $(this).parent().siblings('ul').hide();
-                    $(this).children('ul').stop(true, false).fadeOut();
+                    $(this).children('ul').stop(true, false).not(".third_menu").fadeOut();
                 }
             });
             liHasChild.off('click');
@@ -181,7 +188,7 @@ $(function() {
             $(document).on('touchend click', function(e) {
                 var target = e.target;
                 if (!$(target).is('.menu li a')) {
-                    $('.menu').find('li ul').hide();
+                    $('.menu').find('li ul').not(".third_menu").hide();
                 }
             });
         }
