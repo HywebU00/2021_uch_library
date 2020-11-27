@@ -91,6 +91,15 @@ footer {
     //         }
     //     }
     // }
+    .social_grp{
+        text-align: center;
+        @include screen('mobile'){
+            text-align: left;
+        }   
+        a{
+            height: auto;
+        }
+    }
     // 版權連結
     .footer_link {
         @include li-reset();

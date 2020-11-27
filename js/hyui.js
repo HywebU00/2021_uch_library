@@ -166,7 +166,7 @@ $(function() {
             /*-----------------------------------*/
             hideSidebar();
             _body.removeClass('noscroll');
-            _nav.prependTo('.header .container .nav_block');
+            //_nav.prependTo('.header .container .nav_block');
             //_search.appendTo('.header .container');
             _menu.appendTo('.header .container');
             _search.removeClass('m_search');

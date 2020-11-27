@@ -179,6 +179,7 @@
             top: 0;
         }
     }
+    
 
     // 導覽列
     .navigation {
@@ -249,10 +250,16 @@
             }
 
             a {
-                display: inline-block;
-                padding: .65em .85em;
+                display: inline-flex;
+                padding: .25em .85em;
                 text-decoration: none;
                 color: #fff;
+                align-items: center;
+                height: 45px;
+            }
+            img{
+                width: auto;
+                height: 18px;
             }
         }
 
@@ -268,12 +275,13 @@
     .loggedin {
         border-radius: 0 0 $rounded-angle $rounded-angle;
         border: none;
-        padding: .65em 1.5em;
+        padding: .25em 1.5em;
         min-width: 100px;
         background-color: $primaryColor;
         color: #FFF;
         text-align: center;
         margin: 0;
+        height: 45px;
 
         &:hover,
         &:focus {
@@ -310,6 +318,34 @@
     i {
         margin: 0 .3em 0 0;
     }
+    .social_grp{
+        @include screen('mobile'){
+            display: none;
+        }   
+    }
+}
+
+.social_grp{
+    padding:0 .5em;
+    
+    ul{
+        @include li-reset;
+    }
+    li{
+        display: inline-block;
+        a{
+            display: flex;
+            padding:.25em;
+            box-sizing: border-box;
+            align-items: center;
+            height: 45px;
+            img{
+                width: 25px;
+                height: auto;
+            }
+        }
+    }
+
 }
 
 //search
