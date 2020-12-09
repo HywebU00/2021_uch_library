@@ -13,6 +13,18 @@ $(function() {
         lazyLoad: 'ondemand',
         ease: 'ease'
     });
+    $('.cpSlider').slick({
+        mobileFirst: true,
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 500,
+        autoplay: false,
+        fade: true,
+        lazyLoaded: true,
+        lazyLoad: 'ondemand',
+        ease: 'ease'
+    });
     // 廣告輪播
     $('.adSlider').slick({
         mobileFirst: true,

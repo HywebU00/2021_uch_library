@@ -50,6 +50,9 @@ footer {
                 margin:0 .25em;
             }
         }
+        .copyright{
+            text-align: center;
+        }
         .qrcode{
             text-align:center;
             @include make-xs-column(3);
