@@ -76,6 +76,11 @@ table {
                 color: #000;
             }
         }
+        td[data-label]{
+            &:before {
+                content: attr(data-label);
+            }
+        }
     }
 }
 // fix_th_table
