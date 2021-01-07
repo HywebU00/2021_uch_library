@@ -103,8 +103,10 @@
 .cpSlider{
     margin: 2em 0;
     .img-container{
+        background: $color-lightGray;
         img{
             border-radius: 0;
+            object-fit: contain;
         }
     }
 }
