@@ -101,9 +101,11 @@
 }
 
 .cpSlider{
-    margin: 2em 0;
+    margin: 2em auto;
+    max-width: 600px;
     .img-container{
         background: $color-lightGray;
+         @include aspect-ratio(3, 2);
         img{
             border-radius: 0;
             object-fit: contain;
