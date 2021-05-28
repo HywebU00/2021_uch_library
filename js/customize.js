@@ -206,5 +206,4 @@ $(function() {
     //         $('.reader_area').hide();
     //     });
     // }
-    
 });
