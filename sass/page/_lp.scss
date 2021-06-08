@@ -95,7 +95,7 @@
                     font-size: .875em;
                     background: #eee;
                     padding: 0 .5em;
-                    color: lighten($color-word, 15);
+                    color: $color-word;
                     margin: .5em 1em 0 2em;
 
                     &:hover {
@@ -412,15 +412,20 @@
     margin-top: 2em;
 
     ul {
+        display: flex;
+        flex-wrap: wrap;
         @include li-reset;
     }
 
     li {
-        @include make-xs-column(6);
-        @include make-sm-column(4);
-        @include make-md-column(3);
-        @include make-lg-column(3);
+        flex-basis: 25%;
         @include gutter();
+        @include screen("tablet"){
+            flex-basis: calc(100% / 3);
+        }
+        @include screen("mobile"){
+            flex-basis: 50%;
+        }
         padding-bottom: 30px;
     }
 
@@ -466,14 +471,19 @@
 
     ul {
         @include li-reset;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     li {
-        @include make-xs-column(6);
-        @include make-sm-column(3);
-        @include make-md-column(2);
-        @include make-lg-column(2);
+        flex-basis: 25%;
         @include gutter();
+        @include screen("tablet"){
+            flex-basis: calc(100% / 3);
+        }
+        @include screen("mobile"){
+            flex-basis: 50%;
+        }
         padding-bottom: 30px;
     }
 
@@ -503,6 +513,9 @@
     }
 
     .caption {
+        .department{
+            margin-bottom: .5em;
+        }
         .name {
             font-weight: bold;
             color: $color-word;
