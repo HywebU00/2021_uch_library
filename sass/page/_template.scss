@@ -115,26 +115,53 @@ body {
     .main_image {
         // padding-left:calc( ( 100% - 1100px ) / 2 );
         // background:$lightColor;
-        
-        .img-container {
+        >.container{
+            background: url(../images/main_banner01.jpg) top center no-repeat;
+            background-size: cover;
             height: 220px;
             position:relative;
-            @include screen('tablet') {
-                height: 200px;
-            }
+            border: 8px solid #fff;
+            border-radius: 10px 10px 0 0;
+            // @include screen('tablet') {
+            //     height: 240px;
+            // }
 
-            @include screen('mobile') {
-                height: 160px;
-            }
+            // @include screen('mobile') {
+            //     height: 200px;
+            // }
 
-            @include screen('xs_mobile') {
-                height: 120px;
+            // @include screen('xs_mobile') {
+            //     height: 140px;
+            // }
+            .function_nav{
+                background: #fff;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                margin: 0 auto;
+                width: 100%;
             }
         }
+        
+        // .img-container {
+        //     height: 220px;
+        //     position:relative;
+        //     @include screen('tablet') {
+        //         height: 200px;
+        //     }
+
+        //     @include screen('mobile') {
+        //         height: 160px;
+        //     }
+
+        //     @include screen('xs_mobile') {
+        //         height: 120px;
+        //     }
+        // }
         .search{
-            top:55px;
+            top:40px;
             @include screen('mobile'){
-                top:22px;
+                top:20px;
             }
         }
     }
@@ -142,13 +169,19 @@ body {
     .function_nav {
         position: relative;
         margin: 0 auto;
+        background: #fff;
+        z-index: 10;
+        padding: 0 8px;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
         .function {
             position: absolute;
-            right: 0;
+            right: 8px;
             top: 0;
 
-            @include screen('mobile') {
+            @include screen('xs_mobile') {
                 position: static;
+                padding-bottom: 8px;
             }
         }
     }

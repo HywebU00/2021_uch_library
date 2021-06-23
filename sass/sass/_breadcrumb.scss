@@ -1,8 +1,11 @@
 .breadcrumb {
     //border-bottom: 1px solid #EEE;
-    padding-top: .8em;
+    padding: .8em 0;
     font-size: .813em;
     margin: 0px auto 5px;
+    @include screen('xs_mobile'){
+        padding-bottom: 0;
+    }
     ul {
         @include li-reset;
         li {

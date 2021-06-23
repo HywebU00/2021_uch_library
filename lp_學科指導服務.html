@@ -121,22 +121,60 @@
             <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
             <section class="col-12 main_image">
                 <div class="container">
-                    <div class="mpSlider">
-                        <div class="img-container">
-                            <a href="#" title="">
-                                <picture>
-                                    <source media="(min-width: 1200px)" data-lazy-srcset="images/main_banner01.jpg">
-                                    <source media="(min-width: 992px)" data-lazy-srcset="images/main_banner01.jpg">
-                                    <source media="(min-width: 576px)" data-lazy-srcset="images/main_banner01.jpg">
-                                    <source media="(max-width: 575px)" data-lazy-srcset="images/main_banner01.jpg">
-                                    <img data-lazy="images/main_banner01.jpg" alt="banner1" class="cover">
-                                    <noscript><img src="images/main_banner01.jpg"></noscript>
-                                </picture>
-                            </a>
-                        </div>
+                    <div class="tabSet search">
+                        <section class="search_tabs">
+                            <h2 class="tabItem active"><a href="#">整合查詢</a></h2>
+                            <!--選到的頁籤項目-->
+                            <div class="tabContent search_content">
+                                <form action="">
+                                    <div class="form form_inline">
+                                        <div class="form_grp">
+                                            <label for="mustSameAsId">搜尋</label>
+                                            <input name="username" id="mustSameAsId" type="text" placeholder="請輸入關鍵字" accesskey="S">
+                                            <input name="" type="submit" title="查詢" value="查詢">
+                                        </div>
+                                        <div class="btn_grp">
+                                            <input name="" type="submit" value="進階搜尋">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <h2 class="tabItem"><a href="#">電子資源</a></h2>
+                            <div class="tabContent search_content">
+                                <form action="">
+                                    <div class="form form_inline">
+                                        <div class="form_grp">
+                                            <label for="mustSameAsId">搜尋</label>
+                                            <input name="username" id="mustSameAsId" type="text" placeholder="請輸入關鍵字" accesskey="S">
+                                            <input name="" type="submit" title="查詢" value="查詢">
+                                        </div>
+                                        <div class="btn_grp">
+                                            <input name="" type="submit" value="進階搜尋">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <h2 class="tabItem"><a href="#">館藏目錄</a></h2>
+                            <div class="tabContent search_content">
+                                <form action="">
+                                    <div class="form form_inline">
+                                        <div class="form_grp">
+                                            <label for="mustSameAsId">搜尋</label>
+                                            <input name="username" id="mustSameAsId" type="text" placeholder="請輸入關鍵字" accesskey="S">
+                                            <input name="" type="submit" title="查詢" value="查詢">
+                                        </div>
+                                        <div class="btn_grp">
+                                            <input name="" type="submit" value="進階搜尋">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </section>
                     </div>
-                    <!--mpSlider End-->
-                    <div class="function_nav">
+                </div>
+            </section>
+            <div class="container">
+                <div class="function_nav">
                         <!-- breadcrumb路徑 -->
                         <div class="breadcrumb">
                             <ul>
@@ -150,9 +188,6 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-            </section>
-            <div class="container">
                 <!-- h2節點 -->
                 <h2 class="title">學科指導服務</h2>
                 <!-- LP Start -->
