@@ -5,6 +5,13 @@
         display: block;
         @include aSetting(#555);
         position:relative;
+        &:hover{
+            .img-container{
+                img{
+                    transform: scale(1.05);
+                }
+            }
+        }
         &:focus {
             &:before{
                 content:"";
@@ -23,6 +30,19 @@
     .img-container {
         @include aspect-ratio(4, 3);
         margin-bottom: .5em;
+        &:after{
+            content:"";
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.7) 100%);
+        }
+        img{
+            transition: .3s ease-in;
+        }
     }
     h2, h3, h4 {
         margin: .2em 0;
@@ -31,6 +51,37 @@
         width: 90%;
         margin: 0 auto;
         padding-bottom:1em;
+        position: relative;
+        time{
+            font-size: .938em;
+            color:$color-word-light;
+        }
+        .picture_detial{
+            color: #fff;
+            position: absolute;
+            top: -38px;
+            left: 0;
+            width: 100%;
+            font-size: .938em;
+            ul{
+                @include li-reset;
+                display: flex;
+                justify-content: space-between;
+            }
+            li{
+                margin-right: 1em;
+                &:last-of-type{
+                    margin-right: 0;
+                }
+                i{
+                    margin-right: .5em;
+                    // &:before{
+                    //     width: 1rem;
+                    //     height: 1rem;
+                    // }
+                }
+            }
+        }
     }
     .btn_grp {
         padding: .2em 0;

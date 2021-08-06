@@ -1,13 +1,8 @@
-// 此變數為框架之整體變數，控制整體網站之設定，包含 顏色、文字、格線系統
-// 於mixins 資料夾內，各個模組也有其個別使用的變數，請至個別檔案設定，個別使用變數不含在此設定
-
-//-------------------------------------------------------------顏色---------//
-// 定義顏色 此顏色可自由變換
-$primaryColor: #cd4d00; //主色
-$secondaryColor: #007e81; //輔色
-$lightColor: #7A6D6D; //點綴
-$linkColor: #816A6A; //連結
-$importantColor: #8e6f69; //重要
+$primaryColor: #0492d2; //主色
+$secondaryColor: #0aa096; //輔色
+$lightColor: #ffd200; //點綴
+$linkColor: #22699a; //連結
+$importantColor: #0171a4; //重要
 // 但注意真實顏色與語意的關聯必須易於辨識
 $color-blue: #21baff;
 $color-green: #5cb85c;
@@ -15,14 +10,16 @@ $color-orange: #f77810;
 $color-red: #ff3e4d;
 $color-yellow: #fcc211;
 $color-purple: #aa5ac5;
-$color-gray: #ccc;
-$color-lightGray: #efefef;
+$color-gray: #c9c9c9;
+$color-lightGray: #dcdcdc;
 $color-dark: #333333;
 $color-hr: #666; //hr顏色
-$color-word: #6e5d5d; //一般字的顏色
+$color-word: #1a1a1a; //一般字的顏色
+$color-word-light: #666;
 $color-bg: #e6e6e6;
 $color-bg-2: #7c9fb0;
 $color-line: #dad0d0;
+$color-calendar: #fb8273;
 // 連結顏色
 $aColor: $primaryColor;
 $aHover: darken($primaryColor, 10);
@@ -44,7 +41,7 @@ $font-size: 1em;
 // 格線系統
 $grid-columns: 12 !default; //格線欄位數
 $grid-gutter-width: 30px !default; //左右padding
-$container-max: 1100px !default; //container最大寬
+$container-max: 1200px !default; //container最大寬
 
 //mediaquery
 $screen-lg: 1400px !default; //電腦
@@ -55,10 +52,10 @@ $screen-xs: 576px !default; //極小尺寸
 //-------------------------------------------------------------客製化------//
 $fatfooter-length: 6; //fatfooter選單一行個數
 $fatfooterBgColor: $secondaryColor; //fatFooter 底色
-$fatfooterNavColor: #eef5f0;
-$fatfooterSubNavColor: #E2FFF0;
+$fatfooterNavColor: #fff;
+$fatfooterSubNavColor: #ecf1f4;
 
 
 //-------------------------------------------------------------客製化------//
 
-$rounded-angle: 10px; //整站導角
+$rounded-angle: 2px; //整站導角

@@ -391,17 +391,30 @@
 .album {
     margin: 1em auto;
 
-    ul {
+    >ul {
         @include li-reset;
+        display: flex;
+        flex-wrap: wrap;
 
-        li {
-            @include make_col(3, 1);
+        >li {
+            flex-basis: 33.33333%;
             overflow: visible;
+            display: flex;
+            flex-wrap: wrap;
+            @include screen("tablet"){
+                flex-basis: 50%;
+            }
+            @include screen("xs_mobile"){
+                flex-basis: 100%;
+            }
 
             .thumbnail {
                 width: 100%;
                 max-width: 90%;
                 margin: 0 auto 1em;
+                @include screen("xs_mobile"){
+                    max-width: 100%;
+                }
             }
         }
     }

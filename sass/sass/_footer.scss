@@ -3,17 +3,15 @@ footer {
     @include clearfix;
     text-align: left;
     padding: 0;
-    background: darken($secondaryColor, 5);
-    color:#fff;
+    background: #fff;
     .container {
-        position: relative;
         @include gutter;
         // >div {
         //     padding-bottom: 1em;
         // }
     }
     .accesskey{
-        color:$secondaryColor;
+        color:#fff;
     }
     a {
         text-decoration: none;
@@ -31,76 +29,58 @@ footer {
         @include gutter();
     }
     .footer_info {
-        padding: .5em 0;
+        padding: 10px 20px;
         margin: 0;
         opacity:.9;
-        overflow: hidden;
-        font-size: .875em;
+        display: flex;
+        flex-wrap: wrap;
         .Copyright{
-            // @include make-xs-column(9);
-            // @include make-sm-column(8);
-            // @include make-md-column(10);
-            // @include make-lg-column(10);
-            text-align: center;
-            color: rgba(255,255,255,.9);
-            @include screen('mobile') {
-                text-align: left;
-            }
-            span{
-                margin:0 .25em;
-            }
-        }
-        .copyright{
-            text-align: center;
-        }
-        .qrcode{
-            text-align:center;
-            @include make-xs-column(3);
-            @include make-sm-column(4);
-            @include make-md-column(2);
-            @include make-lg-column(2);
+            flex-basis: 70%;
             @include screen('xs_mobile'){
-                text-align: left;
-                width:100%;
-            }
-            img{
-                width:90px;
-                height:auto;
-            }
-            span{
-                display: block;
-                font-size: .813em;
+                flex-basis: 100%;
             }
         }
     }
     .footer_icon {
-        // @include make-xs-column(12);
-        // @include make-sm-column(3);
-        // @include make-md-column(3);
-        // @include make-lg-column(3);
-        // @include gutter();
+        flex-basis: 30%;
+        align-self: center;
+        @include screen('xs_mobile'){
+            flex-basis: 100%;
+        }
+        ul{
+            display: flex;
+            justify-content: flex-end;
+            @include li-reset;
+            @include screen('xs_mobile'){
+                justify-content: flex-start;
+            }
+
+        }
+        li{
+            margin-right: .5em;
+            a{
+                display: block;
+                width: 50px;
+                height: 50px;
+                img{
+                    max-width: 50px;
+                }
+            }
+        }
     }
-    // .footer_bottom{
-    //     background: #fff;
-    //     border-top: 1px solid $primaryColor;
-    //     font-size: .813em;
-    //     .copyright{
-    //         float: right;
-    //         padding:.5em 0;
-    //         @include screen('mobile') {
-    //             float: none;
-    //             padding-left: 0;
-    //             margin: 0;
-    //         }
-    //     }
-    // }
-    .social_grp{
-        text-align: center;
-        @include screen('mobile'){
-            text-align: left;
-        }   
-        a{
-            height: auto;
+    .footer_bottom{
+        background: #fff;
+        border-top: 1px solid #000;
+        font-size: .813em;
+        padding: 10px 20px;
+        .copyright{
+            float: right;
+            padding:.5em 0;
+            @include screen('mobile') {
+                float: none;
+                padding-left: 0;
+                margin: 0;
+            }
         }
     }
     // 版權連結
@@ -108,67 +88,45 @@ footer {
         @include li-reset();
         @include clearfix();
         margin:.5em auto;
-        text-align: center;
-        @include screen('mobile') {
-            text-align: left;
-        }
+        float: left;
         li {
-            display: inline-block;
-            position: relative;
-            &:before{
-                content:"|";
-                position: absolute;
-                left: -4px;
-                top:.5em;
-            }
-            &:last-of-type{
-                
-            }
-            &:first-of-type{
-                &:before{
-                    content:none;
-                }
-                a{
-                    padding-left: 0;
-                }
+            float: left;
+            display: block;
+            margin: 0px 20px 0 0;
+            @include screen('mobile') {
+                margin-left: 0;
             }
             a {
                 display: block;
-                padding: .5em;
+                padding: .5em 0;
                 background: none;
-                color:$fatfooterNavColor;
+                color: #000;
                 border-radius:4px;
-                
+
                 @include transition(all, .3s, ease-out);
                 &:hover,
                 &:focus {
-                    color: #fff;
+                    color:$color-word;
                 }
-                
             }
         }
     }
     p {
+        font-size: 0.837em;
         line-height: 1.65em;
-        color:#fff;
+        color:#000;
     }
-    // .update,
-    // .counter {
-    //     display: block;
-    //     margin-right: 5px;
-    //     em {
-    //         font-style: normal;
-    //         color: #fff;
-    //         padding: 0 .5em;
-    //     }
-    // }
-    .footer_icon {
-        position: absolute;
-        right: 0;
-        bottom: 1em;
-        @include screen('mobile') {
-            position: relative;
+    .update,
+    .counter {
+        display: inline-block;
+        margin-right: 5px;
+        em {
+            font-style: normal;
+            color: #000;
+            padding: 0 .5em;
         }
+    }
+    .footer_icon {
         a {
             display: inline-block;
             vertical-align: top;

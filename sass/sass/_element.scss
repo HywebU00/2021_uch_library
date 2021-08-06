@@ -13,7 +13,7 @@ a:focus {
     top: 5px;
     left: 5px;
     z-index: 9;
-    color: $secondaryColor;
+    color: #f4f4ee;
     font-size: $font-size;
     @include screen("mobile") {
         display: none;
@@ -25,35 +25,59 @@ a.more {
     float: right;
     display: block;
     text-align: center;
-    margin-top: 1.1em;
-    padding: .5em 2.6em .5em .5em;
-    color: $primaryColor;
+    margin: 1em 0;
+    padding: .8em 2.8em;
+    color: $color-word;
     text-align: center;
     overflow: hidden;
     vertical-align: middle;
     position: relative;
     clear: both;
+    background: $lightColor;
+    border-radius: 30px;
+    transition: .3s ease-in;
+    transform: perspective(1px) translateZ(0);
+    @include screen('mobile'){
+        float: none;
+    }
     &:after{
         content:"";
         position: absolute;
-        right: 0;
-        top:0;
+        right: 1.8em;
+        top: calc(50% - 3px);
         display: block;
-        width: 30px;
-        height: 30px;
-        border:3px solid $primaryColor;
-        border-radius: 30px;
-        transition: all .3s;
-        overflow: hidden;
-        background:#fff url(../images/icon_more.svg) no-repeat right 7px center;
-        background-size: 50%; 
+        width: 6px;
+        height: 6px;
+        border-width: 1px 1px 0 0;
+        border-style: solid;
+        border-color: $color-word;
+        transform: rotate(45deg);
+        transition: .3s ease-in;
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $primaryColor;
+        transform: scaleX(0);
+        transform-origin: 0 50%;
+        transition: transform 0.3s ease-out;
     }
     &:hover,
     &:focus,
     &.active {
-        color: darken($primaryColor, 10);
+        //background: $primaryColor;
+        color: #fff;
+        &:before{
+            transform: scaleX(1);
+        }
         &:after {
-            animation: more_arrow .3s ease-in;
+            right: 1.4em;
+            border-color: #fff;
         }
     }
 }

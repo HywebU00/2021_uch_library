@@ -26,9 +26,9 @@
 .i_add {
     @include hyui_icon('icon_add');
 }
-.i_apple {
-    @include hyui_icon('icon_apple');
-}
+// .i_apple {
+//     @include hyui_icon('icon_apple');
+// }
 .i_arrow_left {
     @include hyui_icon('icon_arrow_left');
 }
@@ -59,18 +59,18 @@
 .i_edit {
     @include hyui_icon('icon_edit');
 }
-.i_facebook {
-    @include hyui_icon('icon_facebook');
-}
-.i_googleplus {
-    @include hyui_icon('icon_googleplus');
-}
-.i_grid {
-    @include hyui_icon('icon_grid');
-}
-.i_heart {
-    @include hyui_icon('icon_heart');
-}
+// .i_facebook {
+//     @include hyui_icon('icon_facebook');
+// }
+// .i_googleplus {
+//     @include hyui_icon('icon_googleplus');
+// }
+// .i_grid {
+//     @include hyui_icon('icon_grid');
+// }
+// .i_heart {
+//     @include hyui_icon('icon_heart');
+// }
 .i_home {
     @include hyui_icon('icon_home');
 }
@@ -80,56 +80,59 @@
 .i_link {
     @include hyui_icon('icon_link');
 }
-.i_linkedin {
-    @include hyui_icon('icon_linkedin');
-}
-.i_lock {
-    @include hyui_icon('icon_lock');
-}
+// .i_linkedin {
+//     @include hyui_icon('icon_linkedin');
+// }
+// .i_lock {
+//     @include hyui_icon('icon_lock');
+// }
 .i_mail {
     @include hyui_icon('icon_mail');
 }
-.i_rss {
-    @include hyui_icon('icon_rss');
-}
+// .i_rss {
+//     @include hyui_icon('icon_rss');
+// }
 .i_setting {
     @include hyui_icon('icon_setting');
 }
-.i_star {
-    @include hyui_icon('icon_star');
-}
-.i_twitter {
-    @include hyui_icon('icon_twitter');
-}
-.i_video {
-    @include hyui_icon('icon_video');
-}
-.i_vimeo {
-    @include hyui_icon('icon_vimeo');
-}
-.i_youtube {
-    @include hyui_icon('icon_youtube');
-}
-.i_global {
-    @include hyui_icon('icon_global');
-}
-.i_trash {
-    @include hyui_icon('icon_trash');
-}
-.i_sort {
-    @include hyui_icon('icon_sort');
-}
-.i_move {
-    @include hyui_icon('icon_move');
-}
-.i_layout {
-    @include hyui_icon('icon_layout');
-}
-.i_copy {
-    @include hyui_icon('icon_copy');
-}
+// .i_star {
+//     @include hyui_icon('icon_star');
+// }
+// .i_twitter {
+//     @include hyui_icon('icon_twitter');
+// }
+// .i_video {
+//     @include hyui_icon('icon_video');
+// }
+// .i_vimeo {
+//     @include hyui_icon('icon_vimeo');
+// }
+// .i_youtube {
+//     @include hyui_icon('icon_youtube');
+// }
+// .i_global {
+//     @include hyui_icon('icon_global');
+// }
+// .i_trash {
+//     @include hyui_icon('icon_trash');
+// }
+// .i_sort {
+//     @include hyui_icon('icon_sort');
+// }
+// .i_move {
+//     @include hyui_icon('icon_move');
+// }
+// .i_layout {
+//     @include hyui_icon('icon_layout');
+// }
+// .i_copy {
+//     @include hyui_icon('icon_copy');
+// }
 .i_view {
     @include hyui_icon('icon_view');
+}
+.i_view_invert {
+    @include hyui_icon('icon_view_invert');
 }
 .i_man {
     @include hyui_icon('icon_man');
@@ -152,15 +155,18 @@
 .i_photo{
     @include hyui_icon('icon_photo');
 }
-.i_order{
-    @include hyui_icon('icon_order');
+.i_photo_invert{
+    @include hyui_icon('icon_photo_invert');
 }
+// .i_order{
+//     @include hyui_icon('icon_order');
+// }
 .i_top{
     @include hyui_icon('icon_top');
 }
-.i_minus{
-    @include hyui_icon('icon_minus');
-}
-.i_login{
-    @include hyui_icon('icon_login');
-}
+// .i_minus{
+//     @include hyui_icon('icon_minus');
+// }
+// .i_login{
+//     @include hyui_icon('icon_login');
+// }

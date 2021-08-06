@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>國立雲林科技大學圖書館</title>
+    <title>健行科技大學圖書館</title>
     <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
     <!-- hyUI css -->
-    <link rel="stylesheet" href="css/hyui.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -26,24 +26,39 @@
         <header class="header">
             <div class="container">
                 <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+                <h1>
+                    <a href="index.html"><img src="images/logo.png" alt="健行科技大學圖書館" /></a>
+                </h1>
                 <div class="nav_block">
                     <!-- navigation Start -->
                     <nav class="navigation">
                         <ul>
-                            <li><a href="#">FB粉絲團</a></li>
-                            <li><a href="#">常見問題</a></li>
-                            <li><a href="#">讀者意見</a></li>
-                            <li><a href="#">網站導覽</a></li>
-                            <li><a href="#">雲林科技大學首頁</a></li>
-                            <li><a href="#">ENGLISH</a></li>
+                            <li><a href="#">網站地圖</a></li>
+                            <li><a href="#">健行首頁</a></li>
                         </ul>
                     </nav>
                     <!-- navigation End -->
                     <!-- 未登入狀態的登入btn -->
-                    <button class="login_btn"><i class="i_login"></i>讀者登入</button>
+                    <button class="login_btn">讀者登入</button>
                     <!-- 已登入狀態顯示讀者姓名 -->
                     <div class="loggedin" style="display: none"><i class="i_login"></i>張家祥</div>
+                    <div class="nav_identity">
+                        <ul>
+                            <li><a href="#">新生</a></li>
+                            <li><a href="#">大學部</a></li>
+                            <li><a href="#">碩士班</a></li>
+                            <li><a href="#">教師</a></li>
+                            <li><a href="#">職員工</a></li>
+                            <li><a href="#">校友</a></li>
+                            <li><a href="#">其他</a></li>
+                        </ul>
+                    </div>
                 </div>
+                <!-- noscript -->
+                <noscript> 您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+ (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的 Alt+左方向鍵(←) 快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結 <a href="#">網站導覽</a>
+                </noscript>
+                <!-- menu Start -->
+                <!-- menu End -->
                 <!--未登入狀態-->
                 <div class="reader_login">
                     <form action="">
@@ -86,108 +101,107 @@
                         </div>
                     </form>
                 </div>
-                <h1>
-                    <a href="index.html"><img src="images/logo.png" alt="國立台灣戲曲學院圖書館" /></a>
-                </h1>
-                <!-- noscript -->
-                <noscript> 您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+ (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的 Alt+左方向鍵(←) 快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結 <a href="#">網站導覽</a>
-                </noscript>
-                <!-- menu Start -->
-                <nav class="menu">
-                    <ul>
-                        <li><a href="#">關於圖書館</a>
-                            <ul>
-                                <li><a href="#">第二層選單</a></li>
-                                <li><a href="#">第二層選單</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">最新消息</a></li>
-                        <li><a href="#">讀者服務</a></li>
-                        <li><a href="#">電子資源</a></li>
-                        <li><a href="#">推廣活動</a></li>
-                        <li><a href="#">中外文期刊服務</a></li>
-                        <li><a href="#">圖書委員專區</a></li>
-                        <li><a href="#">線上系統</a></li>
-                        <li><a href="#">校史館</a></li>
-                    </ul>
-                </nav>
-                <!-- menu End -->
             </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">讀者專區</a></li>
+                    <li class="hasChild"><a href="#">館藏查詢</a>
+                        <ul>
+                            <li><a href="#">第二層選單</a></li>
+                            <li><a href="#">第二層選單第二層選單第二層選單</a>
+                                <ul class="third_menu">
+                                    <li><a href="#">第三層選單</a></li>
+                                    <li><a href="#">第三層選單</a></li>
+                                    <li><a href="#">第三層選單</a></li>
+                                    <li><a href="#">第三層選單</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="http://www.google.com">第二層有連結</a>
+                                <ul class="third_menu">
+                                    <li><a href="#">第三層選單第三層選單</a></li>
+                                    <li><a href="#">第三層選單</a>
+                                        <ul>
+                                            <li><a href="#">第四層選單</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">第三層選單</a></li>
+                                    <li><a href="#">第三層選單</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">第二層選單</a></li>
+                            <li><a href="#">第二層選單</a></li>
+                            <li><a href="#">第二層選單</a></li>
+                            <li><a href="#">第二層選單</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">講習與活動</a></li>
+                    <li><a href="#">館際合作</a></li>
+                    <li><a href="#">健行藝廊</a></li>
+                    <li><a href="#">關於本館</a></li>
+                </ul>
+            </nav>
         </header>
         <!-- header End -->
         <!-- main Start -->
         <div id="center" class="main innerpage">
             <!-- 內頁新增一個classname-->
             <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
-            <section class="col-12 main_image">
+            <section class="function_block">
                 <div class="container">
-                    <div class="tabSet search">
+                    <div class="tabSet search wow fadeInLeft" data-wow-duration=".8s">
                         <section class="search_tabs">
-                            <h2 class="tabItem active"><a href="#">整合查詢</a></h2>
+                            <h2 class="tabItem active"><a href="javascript:;">資源探索服務</a></h2>
                             <!--選到的頁籤項目-->
                             <div class="tabContent search_content">
                                 <form action="">
                                     <div class="form form_inline">
                                         <div class="form_grp">
-                                            <label for="mustSameAsId">搜尋</label>
-                                            <input name="username" id="mustSameAsId" type="text" placeholder="請輸入關鍵字" accesskey="S">
+                                            <label for="">搜尋</label>
+                                            <input name="username" id="" type="text" placeholder="請輸入關鍵字" accesskey="S">
                                             <input name="" type="submit" title="查詢" value="查詢">
-                                        </div>
-                                        <div class="btn_grp">
-                                            <input name="" type="submit" value="進階搜尋">
                                         </div>
                                     </div>
                                 </form>
+                                <p>可查詢電子期刊論文、文章、資料庫等</p>
                             </div>
                             <h2 class="tabItem"><a href="#">電子資源</a></h2>
                             <div class="tabContent search_content">
                                 <form action="">
                                     <div class="form form_inline">
                                         <div class="form_grp">
-                                            <label for="mustSameAsId">搜尋</label>
-                                            <input name="username" id="mustSameAsId" type="text" placeholder="請輸入關鍵字" accesskey="S">
+                                            <label for="">搜尋</label>
+                                            <input name="username" id="" type="text" placeholder="請輸入關鍵字" accesskey="S">
                                             <input name="" type="submit" title="查詢" value="查詢">
-                                        </div>
-                                        <div class="btn_grp">
-                                            <input name="" type="submit" value="進階搜尋">
                                         </div>
                                     </div>
                                 </form>
+                                <p>可查詢電子期刊論文、文章、資料庫等</p>
                             </div>
-                            <h2 class="tabItem"><a href="#">館藏目錄</a></h2>
+                            <h2 class="tabItem"><a href="#">圖書與視聽</a></h2>
                             <div class="tabContent search_content">
                                 <form action="">
                                     <div class="form form_inline">
                                         <div class="form_grp">
-                                            <label for="mustSameAsId">搜尋</label>
-                                            <input name="username" id="mustSameAsId" type="text" placeholder="請輸入關鍵字" accesskey="S">
+                                            <label for="">搜尋</label>
+                                            <input name="username" id="" type="text" placeholder="請輸入關鍵字" accesskey="S">
                                             <input name="" type="submit" title="查詢" value="查詢">
-                                        </div>
-                                        <div class="btn_grp">
-                                            <input name="" type="submit" value="進階搜尋">
                                         </div>
                                     </div>
                                 </form>
+                                <p>可查詢電子期刊論文、文章、資料庫等</p>
                             </div>
                         </section>
+                    </div>
+                    <div class="info_block  wow fadeInRight">
+                        <div class="info_title">本日開館</div>
+                        <ul>
+                            <li>瀏覽人次：99999</li>
+                            <li>更新日期：2021/07/05</li>
+                        </ul>
                     </div>
                 </div>
             </section>
             <div class="container">
-                <div class="function_nav">
-                    <!-- breadcrumb路徑 -->
-                    <div class="breadcrumb">
-                        <ul>
-                            <li><a href="#">首頁</a></li>
-                            <li>活動列表</li>
-                        </ul>
-                    </div>
-                    <div class="function">
-                        <ul>
-                            <li class="back"><a href="javascript:history.back()">回上一頁</a></li>
-                        </ul>
-                    </div>
-                </div>
                 <!-- h2節點 -->
                 <h2 class="title">最新消息</h2>
                 <!-- LP Start -->
@@ -197,53 +211,43 @@
                         <ul>
                             <li>
                                 <a href="#"><span class="num">1</span>【課程延期公告】</a>
-                                <a href="#" class="dept">內湖校區</a>
-                                <time>2018-03-09</time>
+                                <time>2021-03-09</time>
                             </li>
                             <li>
                                 <a href="#"><span class="num">2</span> 因白鹿颱風登陸，本週六親子說故事活動暫停一次!因白鹿颱風登陸，本週六親子說故事活動暫停一次!因白鹿颱風登陸，本週六親子說故事活動暫停一次!因白鹿颱風登陸，本週六親子說故事活動暫停一次!</a>
-                                <a href="#" class="dept">木柵校區</a>
-                                <time>2018-03-09</time>
+                                <time>2021-03-09</time>
                             </li>
                             <li>
                                 <a href="#"><span class="num">3</span> 今年的中秋 用超擬真夢幻黏土甜點 療癒你的味蕾 </a>
-                                <a href="#" class="dept">內湖校區</a>
-                                <time>2018-03-09</time>
+                                <time>2021-03-09</time>
                             </li>
                             <li>
                                 <a href="#"><span class="num">4</span>【課程延期公告】</a>
-                                <a href="#" class="dept">木柵校區</a>
-                                <time>2018-03-09</time>
+                                <time>2021-03-09</time>
                             </li>
                             <li>
                                 <a href="#"><span class="num">5</span> 因白鹿颱風登陸，本週六親子說故事活動暫停一次!因白鹿颱風登陸，本週六親子說故事活動暫停一次!因白鹿颱風登陸，本週六親子說故事活動暫停一次!因白鹿颱風登陸，本週六親子說故事活動暫停一次!</a>
-                                <a href="#" class="dept">內湖校區</a>
-                                <time>2018-03-09</time>
+                                <time>2021-03-09</time>
                             </li>
                             <li>
                                 <a href="#"><span class="num">6</span> 今年的中秋 用超擬真夢幻黏土甜點 療癒你的味蕾 </a>
-                                <a href="#" class="dept">內湖校區</a>
-                                <time>2018-03-09</time>
+                                <time>2021-03-09</time>
                             </li>
                             <li>
                                 <a href="#"><span class="num">7</span>【課程延期公告】</a>
-                                <a href="#" class="dept">木柵校區</a>
-                                <time>2018-03-09</time>
+                                <time>2021-03-09</time>
                             </li>
                             <li>
                                 <a href="#"><span class="num">8</span> 因白鹿颱風登陸，本週六親子說故事活動暫停一次!因白鹿颱風登陸，本週六親子說故事活動暫停一次!因白鹿颱風登陸，本週六親子說故事活動暫停一次!因白鹿颱風登陸，本週六親子說故事活動暫停一次!</a>
-                                <a href="#" class="dept">木柵校區</a>
-                                <time>2018-03-09</time>
+                                <time>2021-03-09</time>
                             </li>
                             <li>
                                 <a href="#"><span class="num">9</span> 今年的中秋 用超擬真夢幻黏土甜點 療癒你的味蕾 </a>
-                                <a href="#" class="dept">木柵校區</a>
-                                <time>2018-03-09</time>
+                                <time>2021-03-09</time>
                             </li>
                             <li>
                                 <a href="#"><span class="num">10</span> 午節休館公告：108/6/7(五)休館1日</a>
-                                <a href="#" class="dept">木柵校區</a>
-                                <time>2018-03-09</time>
+                                <time>2021-03-09</time>
                             </li>
                         </ul>
                     </div>
@@ -286,88 +290,113 @@
             </div>
         </div>
         <!-- fatfooter Start -->
-        <section class="fatfooter">
-            <div class="container">
-                <button type="button" name="收合" class="btn btn-fatfooter">OPEN</button>
-                <nav>
-                    <ul>
-                        <li><a href="#">讀者服務</a>
-                            <ul>
-                                <li><a href="#">借閱規則與辦法</a></li>
-                                <li><a href="#">辦理借閱證</a></li>
-                                <li><a href="#">影印、列印、掃描</a></li>
-                                <li><a href="#">館內無線上網</a></li>
-                                <li><a href="#">新生指導</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">查詢</a>
-                            <ul>
-                                <li><a href="#">本館館藏查詢</a></li>
-                                <li><a href="#">新進館藏</a></li>
-                                <li><a href="#">期刊查詢</a></li>
-                                <li><a href="#">新書推薦</a></li>
-                                <li><a href="#">全國圖書館整合查詢</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">館際合作</a>
-                            <ul>
-                                <li><a href="#">全國文獻傳遞服務系統</a></li>
-                                <li><a href="#">聯合圖書代借代還服務</a></li>
-                                <li><a href="#">館合申請說明</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">電子資源</a>
-                            <ul>
-                                <li><a href="#">台灣學術電子書聯盟整合查詢</a></li>
-                                <li><a href="#">機構典藏</a></li>
-                                <li><a href="#">HyRead 電子書平台</a></li>
-                                <li><a href="#">博碩士論文整合查詢</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">推廣活動</a>
-                            <ul>
-                                <li><a href="#">每月書目主題展</a></li>
-                                <li><a href="#">經典專書坊</a></li>
-                                <li><a href="#">圖書館參訪導覽</a></li>
-                                <li><a href="#">數位校史館</a></li>
-                                <li><a href="#">每週新書快遞</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">空間預約</a>
-                            <ul>
-                                <li><a href="#">討論室預約</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
-        <!-- fatfooter End -->
-        <!-- footer Start-->
-        <footer>
-            <div class="container">
-                <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
-                <div class="footer_info">
-                    <ul class="footer_link">
-                        <li><a href="javascript:;">360度環景導覽</a></li>
-                        <li><a href="javascript:;">本館交通位置圖</a></li>
-                        <li><a href="javascript:;">(05) 534-2601服務分機</a></li>
-                        <li><a href="javascript:;">意見箱</a></li>
-                    </ul>
-                    <p class="Copyright">
-                        <span>640 雲林縣斗六市大學路三段123號 </span><span>library@yuntech.edu.tw</span>
-                        <br />
-                        © National Yunlin University of Science and Technology. All rights reserved.
-                    </p>
-                </div>
+    <section class="fatfooter">
+        <div class="container">
+            <!-- <button type="button" name="收合" class="btn btn-fatfooter">OPEN</button> -->
+            <nav>
+                <ul>
+                    <li><a href="#">讀者專區</a>
+                        <ul>
+                            <li><a href="#">最新消息</a></li>
+                            <li><a href="#">防疫措施與服務</a></li>
+                            <li><a href="#">個人借閱記錄查詢</a></li>
+                            <li><a href="#">進修部線上圖書視聽媒體預借服務</a></li>
+                            <li><a href="#">圖書介購</a></li>
+                            <li><a href="#">線上申請表單</a></li>
+                            <li><a href="#">線上參考諮詢</a></li>
+                            <li><a href="#">圖書資料借閱辦法</a></li>
+                            <li><a href="#">多媒體視聽中心使用辦法</a></li>
+                            <li><a href="#">智慧財產權宣導</a></li>
+                            <li><a href="#">Q&A</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">館藏資源</a>
+                        <ul>
+                            <li><a href="#">服務內容介紹</a></li>
+                            <li><a href="#">圖書館LINE服務</a></li>
+                            <li><a href="#">館際合作</a></li>
+                            <li><a href="#">列複印服務</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">講習與活動</a>
+                        <ul>
+                            <li><a href="#">館藏查詢</a></li>
+                            <li><a href="#">電子書平臺</a></li>
+                            <li><a href="#">資料庫</a></li>
+                            <li><a href="#">推薦好書</a></li>
+                            <li><a href="#">教師指定參考書</a></li>
+                            <li><a href="#">熱門排行</a></li>
+                            <li><a href="#">教師指參</a></li>
+                            <li><a href="#">推薦好書</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">館際合作</a>
+                        <ul>
+                            <li><a href="#">申請方式</a></li>
+                            <li><a href="#">各聯盟規定</a></li>
+                            <li><a href="#">館際合作Q&A</a></li>
+                            <li><a href="#">聯合目錄</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">健行藝廊</a>
+                        <ul>
+                            <li><a href="#">藝廊簡介</a></li>
+                            <li><a href="#">展覽資訊</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">關於本館</a>
+                        <ul>
+                            <li><a href="#">圖書館導覽</a></li>
+                            <li><a href="#">開放時間</a></li>
+                            <li><a href="#">圖書館組織</a></li>
+                            <li><a href="#">規則與辦法</a></li>
+                            <li><a href="#">各樓層平面圖</a></li>
+                            <li><a href="#">多媒體視聽中心</a></li>
+                            <li><a href="#">粉絲團專頁</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <!-- fatfooter End -->
+    <!-- footer Start-->
+    <footer>
+        <div class="container">
+            <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="下方功能區塊">:::</a>
+            <div class="footer_info">
+                <p class="Copyright">
+                    地址：320桃園市中壢區健行路229號<br>
+                    電話：03-4581196轉3748～3758<br>
+                    <span class="update">更新日期：<em>2021/01/01</em></span>
+                    <span class="counter">瀏覽人次 : 87,073</span>
+                </p>
                 <div class="footer_icon">
-                    <a target="_blank" href="javascript:;" title="另開視窗">
-                        <img src="images/basic/accessibility.jpg" alt="">
-                    </a>
+                    <ul>
+                        <li>
+                            <a target="_blank" href="javascript:;" title="另開視窗">
+                                <img src="images/icon/icon_facebook.svg" alt="facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="javascript:;" title="另開視窗">
+                                <img src="images/icon/icon_mail_red.svg" alt="mail">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </footer>
-        <!-- footer End -->
+            <div class="footer_bottom">
+                <ul class="footer_link">
+                    <li><a href="javascript:;">隱私權政策</a></li>
+                    <li><a href="javascript:;">資訊安全政策宣告 </a></li>
+                    <li><a href="javascript:;">著作權聲明</a></li>
+                </ul>
+                <p class="copyright">Copyright＠健行科技大學圖書館</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer End -->
     </div>
     <a href="javascript:;" class="scrollToTop">回頁首</a>
     <!-- JQ -->

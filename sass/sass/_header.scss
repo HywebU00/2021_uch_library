@@ -2,12 +2,15 @@
 .header {
     position: relative;
     z-index: 99;
+    background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0.1) 100%);
     @extend %clearfix;
 
     @include screen('mobile') {
         position: fixed;
         width: 100%;
-        background: $secondaryColor;
+        background: #fff;
+        box-shadow: 0 2px 5px rgba(0,0,0,.1);
     }
 
     // 虛擬底色 - navigation bg
@@ -53,8 +56,7 @@
         max-width: $container-max;
         overflow: visible;
         position: relative; // menu
-        background: url(../images/YunTech_Library.png) no-repeat right center;
-        background-size: 50%;
+        
         @include gutter(0);
         @media screen and (max-width: 1100px) {
             @include gutter();
@@ -76,7 +78,7 @@
 
             span {
                 position: absolute;
-                background: #fff;
+                background: $secondaryColor;
                 width: 50%;
                 height: 3px;
                 top: 20px;
@@ -122,12 +124,14 @@
     }
 
     h1 {
-        float: left;
+        //float: left;
         width: 360px;
         height: 75px;
-        margin: .65em 0;
+        margin-left: 0;
         padding: 0;
+        max-width: 40%;
         @include box-sizing;
+
 
         a {
             display: inline-block;
@@ -142,16 +146,20 @@
 
         img {
             display: block;
-            max-width: 360px;
+            max-width: 100%;
             max-height: 75px;
         }
 
         @include screen('mobile') {
             padding: 0 60px;
             width: 100%;
-            text-align: center;
+            max-width: 100%;
             height: 60px;
             margin: 0;
+            max-width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             img {
                 width: auto;
@@ -172,11 +180,32 @@
     .nav_block {
         display: flex;
         justify-content: flex-end;
+        flex-wrap: wrap;
+        position: absolute;
+        right: 0;
+        top: 0;
+        max-width: 60%;
 
         @include screen('mobile') {
-            position: absolute;
-            right: 0;
-            top: 0;
+            
+        }
+    }
+    .nav_identity{
+        flex-basis: 100%;
+        margin-top: .5em;
+        ul{
+            @include li-reset;
+            display: flex;
+            justify-content: flex-end;
+        }
+        li{
+            margin: .5em;
+        }
+        a{
+            color: $color-word;
+            &:hover, &:focus{
+                color: $primaryColor;
+            }
         }
     }
     
@@ -189,7 +218,6 @@
         //float: right;
         // background: $secondaryColor;
         // border-radius: 0 0 10px 10px;
-        margin-right: 1px;
 
         @include screen('mobile') {
             display: none;
@@ -217,45 +245,40 @@
             float: left;
             margin: 0;
             position: relative;
-            background: darken($secondaryColor, 5);
-
-            &:before {
-                content: "";
-                display: block;
-                position: absolute;
-                width: 1px;
-                height: 14px;
-                background: #fff;
-                left: -1px;
-                top: 50%;
-                margin-top: -6px;
-            }
+            background: $primaryColor;
 
             &:first-of-type {
-                border-radius: 0 0 0 $rounded-angle;
-                padding-left: .65em;
-
-                &:before {
-                    content: none;
+                a{
+                    padding-left: 3em;
+                    @include screen('tablet'){
+                        padding-left: 2em
+                    }
                 }
             }
 
             &:last-of-type {
-                border-radius: 0 0 $rounded-angle 0;
-                padding-right: .65em;
-            }
-
-            &:hover {
-                background: darken($secondaryColor, 10);
+                a{
+                    padding-right: 3em;
+                    @include screen('tablet'){
+                        padding-right: 2em;
+                    }
+                }    
             }
 
             a {
                 display: inline-flex;
-                padding: .25em .85em;
+                padding: 1.2em 1.5em;
                 text-decoration: none;
                 color: #fff;
                 align-items: center;
-                height: 45px;
+                height: 60px;
+                transition: .3s ease-in;
+                &:hover, &:focus {
+                    color: $lightColor;
+                }
+                @include screen('tablet'){
+                     padding: 1.3em 1em   
+                }
             }
             img{
                 width: auto;
@@ -273,22 +296,23 @@
 
     .login_btn,
     .loggedin {
-        border-radius: 0 0 $rounded-angle $rounded-angle;
+        border-radius: 0;
         border: none;
-        padding: .25em 1.5em;
+        padding: 1.2em 3em;
         min-width: 100px;
-        background-color: $primaryColor;
-        color: #FFF;
+        background-color: $lightColor;
+        color: #000;
         text-align: center;
         margin: 0;
-        height: 45px;
+        height: 60px;
+        @include screen('tablet'){
+             padding: 1.2em 2em;           
+        }
 
         &:hover,
         &:focus {
-            background-color: $aHover;
-            @include screen('mobile'){
-                background-color: darken($secondaryColor,10);
-            }
+            color: $primaryColor;
+            box-shadow: none;
         }
 
         @include screen('mobile') {
@@ -298,14 +322,10 @@
             max-width: 60px;
             height: 60px;
             font-size: 0;
-            background: url(../images/icon/icon_login.svg) no-repeat center;
+            background:#fff url(../images/icon/icon_man_blue.svg) no-repeat center;
             background-size: 30px;
-            opacity: .8;
             border-radius: 0;
 
-            &:hover {
-                opacity: 1;
-            }
         }
 
         @media screen and (max-width: 375px) {
@@ -348,266 +368,6 @@
 
 }
 
-//search
-.search {
-    //min-width: 30%;
-    //max-width: 50%;
-    //float: right;
-    vertical-align: middle;
-    padding: 0em .3em 0em;
-    overflow: hidden;
-    @include box-sizing;
-
-    @include screen('mobile') {
-        //display: none;
-    }
-
-    label {
-        font-size: 0em;
-        height: 0;
-        padding: 0;
-        margin: 0;
-    }
-
-    select {
-        height: 40px;
-        //min-width: 150px;
-        border: 0;
-        border: 1px solid #e2e2e2;
-        border-right: 0;
-        border-radius: .125em;
-        flex: 1 0 auto;
-        margin-bottom: 0;
-    }
-
-    .form_grp {
-        margin-bottom: 0;
-        //float: left;
-        margin-right: 0 !important;
-        width: 100%;
-        //height:2em;
-        position: relative;
-        flex: 1 1 auto;
-
-        input {
-            margin: 0;
-            box-shadow: none;
-
-            &[type="text"] {
-                // position: absolute;
-                // left: 0;
-                // top: 0;
-                margin-top: 0;
-                height: 40px;
-                width: calc(100% - 85px);
-                padding: .2em .5em;
-                border-radius: $rounded-angle;
-                background: $color-bg;
-                border: none;
-
-                &:focus {
-                    box-shadow: 0px 0px 0px 3px $aHover;
-                    outline: none;
-                    border: none;
-                }
-            }
-
-            &[type="submit"] {
-                //font-size: 0em;
-                height: 40px;
-                background: $primaryColor;
-                //background-size: 20px;
-                outline: 1px solid transparent;
-                border: none;
-                min-width: 72px;
-                // display: block;
-                // position: absolute;
-                // right: 1em;
-                // top: 0;
-                border-radius: 20px;
-                @include box-sizing;
-
-                &:hover,
-                &:focus {
-                    opacity: 1;
-                    box-shadow: 0px 0px 0px 2px $aHover inset;
-                    outline: none;
-                }
-
-                &:focus {
-                    outline: 1px solid $form-focus;
-                }
-            }
-        }
-    }
-
-    .btn_grp {
-        padding: .1em;
-        margin-bottom: 0;
-        float: right;
-
-        @include screen('xs_mobile') {
-            float: none;
-            width: 100%;
-        }
-
-        input,
-        input[type="submit"] {
-            margin: 0;
-            //padding: .4em 1em .4em !important;
-            //font-size: .813em;
-            height: 40px;
-            background: $primaryColor;
-            border: none;
-            border-radius: 20px;
-
-            @include screen('xs_mobile') {
-                background: none;
-                color: $primaryColor;
-                text-decoration: underline;
-                border-radius: 0;
-            }
-
-            &:hover,
-            &:focus {
-                @include screen('xs_mobile') {
-                    box-shadow: none;
-                    color: $aHover;
-                }
-            }
-        }
-    }
-
-    .keywordHot {
-        display: block;
-        vertical-align: middle;
-        margin-left: .5em;
-        padding: .1em 0 .3em;
-        clear: both;
-
-        ul {
-            display: inline-block;
-            font-size: .813em;
-            line-height: 1.65em;
-            margin: 0;
-            padding: 0;
-
-            &:before {
-                display: inline-block;
-                content: "";
-                color: #999;
-                float: left;
-            }
-
-            li {
-                margin: 0 .6em 0 0;
-                padding: 0;
-                display: inline-block;
-            }
-
-            a {
-                @include aSetting_nocolor;
-            }
-        }
-    }
-
-    // m_search
-    &.m_search {
-        width: 100% !important;
-        max-width: 100% !important;
-        min-width: auto;
-        padding: .8em .3em;
-        display: block;
-        height: auto;
-        position: fixed;
-        top: 60px;
-        left: 0;
-        z-index: 98;
-        background: #333;
-        display: none;
-
-        label {
-            font-size: 0em;
-            line-height: 0;
-        }
-
-        .form_grp {
-            width: 60%;
-            //padding: 0 0 0 5% !important;
-            margin-top: 0;
-            text-align: right;
-            //float: left;
-            height: 50px;
-            position: relative;
-            @include box-sizing();
-
-            label {
-                display: none;
-            }
-
-            input {
-                width: 100%;
-                margin: 0;
-                padding: .5em 45px .4em .5em;
-
-                &[type="submit"] {
-                    font-size: 0em;
-                    width: 36px !important;
-                    height: 36px;
-                    padding: 0;
-                    // max-width:none;
-                    // min-width:none;
-                    background: url(../images/basic/icon_search.png) no-repeat center center;
-                    background-size: 24px;
-                    border: none;
-                    display: inline-block;
-                    // margin-left: -50px !important;
-                    position: absolute;
-                    right: 5px;
-                    top: 0px;
-                    opacity: .8;
-
-                    // outline:1px solid red;
-                    &:hover,
-                    &:focus {
-                        opacity: 1;
-                    }
-                }
-            }
-        }
-
-        .btn_grp {
-            padding: .1em 5% .1em 0;
-            margin-bottom: 0;
-            width: 120px;
-            text-align: left;
-            @include box-sizing();
-
-            input {
-                width: 100% !important;
-                padding: .6em .5em !important;
-                margin: 0 !important;
-                height: 42px;
-            }
-        }
-
-        .keywordHot {
-            padding-left: 5%;
-            margin-top: 10px;
-            @extend %clearfix;
-
-            a {
-                color: #FFF;
-
-                &:hover,
-                &:focus {
-                    color: $primaryColor;
-                }
-            }
-        }
-    }
-
-}
 
 .reader_area_block {
 
@@ -622,15 +382,15 @@
     padding: 1.5em 1.5em 1em;
     overflow: hidden;
     font-size: .938em;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .4);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .4);
     position: fixed;
-    right: calc((100% - 1100px) / 2);
-    top: 50px;
+    right: calc((100% - 1200px) / 2);
+    top: 62px;
     z-index: 100;
     width: 280px;
     border-radius: $rounded-angle;
     display: none;
-    @media screen and (max-width: 1100px){
+    @media screen and (max-width: 1200px){
         right: 15px;
     }
     @include screen('mobile') {
@@ -813,20 +573,14 @@
             }
 
             .logout {
-                background: $secondaryColor;
+                background: $lightColor;
                 border: none;
-                color: #fff;
+                //color: #fff;
                 padding: .5em 1.2em;
-                border-radius: 30px;
                 min-width: 90px;
                 display: inline-block;
                 &:hover {
-                    background: darken($secondaryColor, 10);
-
-                    &:after {
-                        background: darken($secondaryColor, 10);
-                        transform: scaleX(.9);
-                    }
+                    color: $primaryColor;
                 }
             }
         }
@@ -851,7 +605,7 @@
         >ul {
             >li {
                 >a {
-                    color: #FFF;
+                    padding: 1em 1.8em;
                 }
 
                 &.hasChild {

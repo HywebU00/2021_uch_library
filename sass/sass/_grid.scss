@@ -70,7 +70,7 @@
         @include make-md-column(8);
         @include make-lg-column(8);
     }
-    .col:nth-child(2n) {
+    .col:nth-of-type(2n) {
         @include make-xs-column(12);
         @include make-sm-column(4);
         @include make-md-column(4);
@@ -85,7 +85,7 @@
         @include make-md-column(4);
         @include make-lg-column(4);
     }
-    .col:nth-child(2n) {
+    .col:nth-of-type(2n) {
         @include make-xs-column(12);
         @include make-sm-column(8);
         @include make-md-column(8);
@@ -101,7 +101,7 @@
         @include make-lg-column(9);
         
     }
-    .col:nth-child(2n) {
+    .col:nth-of-type(2n) {
         @include make-xs-column(12);
         @include make-sm-column(3);
         @include make-md-column(3);
@@ -116,7 +116,7 @@
         @include make-md-column(3);
         @include make-lg-column(3);
     }
-    .col:nth-child(2n) {
+    .col:nth-of-type(2n) {
         @include make-xs-column(12);
         @include make-sm-column(9);
         @include make-md-column(9);
@@ -131,7 +131,7 @@
         @include make-md-column(7);
         @include make-lg-column(7);
     }
-    .col:nth-child(2n) {
+    .col:nth-of-type(2n) {
         @include make-xs-column(12);
         @include make-sm-column(5);
         @include make-md-column(5);
@@ -170,7 +170,7 @@
         @include make-sm-column(3);
         @include make-md-column(3);
         @include make-lg-column(3);
-        &:nth-child(2) {
+        &:nth-of-type(2) {
             @include make-xs-column(12);
             @include make-sm-column(6);
             @include make-md-column(6);
