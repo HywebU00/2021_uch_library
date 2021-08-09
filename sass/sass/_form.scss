@@ -497,7 +497,6 @@ input[type="date"]:focus,
 input[type="email"]:focus,
 textarea:focus,
 select:focus {
-    border: 1px solid lighten($form-focus, 10);
     @include box-shadow(0px 0px 0px 2px lighten($form-focus, 10));
     outline: none;
 }
