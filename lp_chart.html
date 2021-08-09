@@ -13,6 +13,8 @@
     <!-- slick css-->
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+    <!--pignose-->
+    <link rel="stylesheet" href="vendor/pg_calendar/css/pignose.calendar.min.css">
     <!-- hyUI css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -217,90 +219,32 @@
                     </div>
                 </div>
                 <!-- h2節點 -->
-                <h2 class="title">最新消息</h2>
+                <h2 class="title">即時資訊</h2>
                 <!-- LP Start -->
                 <section class="lp">
-                    <!-- 文字列表 -->
-                    <div class="list">
-                        <ul>
-                            <li>
-                                <a href="#"><span class="num">1</span>【課程延期公告】</a>
-                                <time>2021-03-09</time>
-                            </li>
-                            <li>
-                                <a href="#"><span class="num">2</span> 因白鹿颱風登陸，本週六親子說故事活動暫停一次!因白鹿颱風登陸，本週六親子說故事活動暫停一次!因白鹿颱風登陸，本週六親子說故事活動暫停一次!因白鹿颱風登陸，本週六親子說故事活動暫停一次!</a>
-                                <time>2021-03-09</time>
-                            </li>
-                            <li>
-                                <a href="#"><span class="num">3</span> 今年的中秋 用超擬真夢幻黏土甜點 療癒你的味蕾 </a>
-                                <time>2021-03-09</time>
-                            </li>
-                            <li>
-                                <a href="#"><span class="num">4</span>【課程延期公告】</a>
-                                <time>2021-03-09</time>
-                            </li>
-                            <li>
-                                <a href="#"><span class="num">5</span> 因白鹿颱風登陸，本週六親子說故事活動暫停一次!因白鹿颱風登陸，本週六親子說故事活動暫停一次!因白鹿颱風登陸，本週六親子說故事活動暫停一次!因白鹿颱風登陸，本週六親子說故事活動暫停一次!</a>
-                                <time>2021-03-09</time>
-                            </li>
-                            <li>
-                                <a href="#"><span class="num">6</span> 今年的中秋 用超擬真夢幻黏土甜點 療癒你的味蕾 </a>
-                                <time>2021-03-09</time>
-                            </li>
-                            <li>
-                                <a href="#"><span class="num">7</span>【課程延期公告】</a>
-                                <time>2021-03-09</time>
-                            </li>
-                            <li>
-                                <a href="#"><span class="num">8</span> 因白鹿颱風登陸，本週六親子說故事活動暫停一次!因白鹿颱風登陸，本週六親子說故事活動暫停一次!因白鹿颱風登陸，本週六親子說故事活動暫停一次!因白鹿颱風登陸，本週六親子說故事活動暫停一次!</a>
-                                <time>2021-03-09</time>
-                            </li>
-                            <li>
-                                <a href="#"><span class="num">9</span> 今年的中秋 用超擬真夢幻黏土甜點 療癒你的味蕾 </a>
-                                <time>2021-03-09</time>
-                            </li>
-                            <li>
-                                <a href="#"><span class="num">10</span> 午節休館公告：108/6/7(五)休館1日</a>
-                                <time>2021-03-09</time>
-                            </li>
-                        </ul>
-                    </div>
+                    <section>
+                        <h3 class="title">全年即時資訊</h3>
+                        <div class="instant_info">
+                            <ul>
+                                <li class="readers_card data0">
+                                    <i class="amount">110,684</i><span class="unit">張</span><span class="text">讀者辦證數量</span>
+                                </li>
+                                <li class="collections data1">
+                                    <i class="amount">755,417</i><span class="unit">冊</span><span class="text">館藏數量</span>
+                                </li>
+                                <li class="borrowing data2">
+                                    <i class="amount">4,819,105</i><span class="unit">冊</span><span class="text">借閱數量</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="charts">
+                        <div id="container0" class="chart_container"></div>
+                        <div id="container1" class="chart_container"></div>
+                        <div id="container2" class="chart_container"></div>
+                    </section>
                 </section>
                 <!-- LP End -->
-                <!-- Pagination -->
-                <div class="pagination">
-                    <form action="" class="form_inline">
-                        <div class="total"> 共<span>308</span>筆資料，第<span>1/18</span>頁，每頁顯示 <select name="" id="">
-                                <option value="">10</option>
-                                <option value="">20</option>
-                                <option value="">30</option>
-                                <option value="">40</option>
-                            </select> 筆， <input type="button" class="btn" value="確定">
-                        </div>
-                    </form>
-                    <ul class="page">
-                        <li class="first">
-                            <a href="#" title="第一頁">第一頁 </a></li>
-                        <li class="prev">
-                            <a href="#" title="回上一頁">回上一頁 </a></li>
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">6</a></li>
-                        <li><a href="#">7</a></li>
-                        <li><a href="#">8</a></li>
-                        <li><a href="#">9</a></li>
-                        <li><a href="#">10</a></li>
-                        <li class="next">
-                            <a href="#" title="下一頁">下一頁 </a>
-                        </li>
-                        <li class="last">
-                            <a href="#" title="最後一頁">最後一頁 </a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </div>
         <!-- fatfooter Start -->
@@ -426,6 +370,224 @@
     <script src="js/hyui.js"></script>
     <!-- 客製js -->
     <script src="js/customize.js"></script>
+    <!--highcharts-->
+    <script src="vendor/highcharts/code/highcharts.js"></script>
+    <script src="vendor/highcharts/code/modules/series-label.js"></script>
+    <script src="vendor/highcharts/code/modules/exporting.js"></script>
+    <script src="vendor/highcharts/code/modules/export-data.js"></script>
+    <script>
+    Highcharts.chart('container0', {
+
+        title: {
+            text: '讀者辦證數量(張)',
+            style: {
+                fontSize: '2em'
+            }
+        },
+
+        subtitle: {
+            text: '每月統計',
+            style: {
+                fontSize: '1.2em'
+            }
+        },
+
+        yAxis: {
+            title: {
+                text: '張數',
+                fontSize: 13
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        xAxis: {
+            categories: ['2019/1', '2019/2', '2019/3', '2019/4', '2019/5', '2019/6',
+                '2019/7', '2019/8', '2019/9', '2019/10', '2019/11', '2019/12'
+            ]
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+
+        plotOptions: {
+            series: {
+                label: {
+                    connectorAllowed: false
+                }
+            }
+        },
+
+        series: [{
+            name: '張數',
+            data: [634, 653, 777, 968, 701, 1031, 933, 575, 596, 814, 1324],
+            color: '#6a60d6'
+        }],
+
+        responsive: {
+            rules: [{
+                condition: {
+                    maxWidth: 500
+                },
+                chartOptions: {
+                    legend: {
+                        layout: 'horizontal',
+                        align: 'center',
+                        verticalAlign: 'bottom'
+                    }
+                }
+            }]
+        }
+
+    });
+    </script>
+    <script>
+    Highcharts.chart('container1', {
+
+        title: {
+            text: '館藏數量(冊)',
+            style: {
+                fontSize: '2em'
+            }
+        },
+
+        subtitle: {
+            text: '每月統計',
+            style: {
+                fontSize: '1.2em'
+            }
+        },
+
+        yAxis: {
+            title: {
+                text: '冊次',
+                fontSize: 13
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        xAxis: {
+            categories: ['2019/1', '2019/2', '2019/3', '2019/4', '2019/5', '2019/6',
+                '2019/7', '2019/8', '2019/9', '2019/10', '2019/11', '2019/12'
+            ]
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+
+        plotOptions: {
+            series: {
+                label: {
+                    connectorAllowed: false
+                }
+            }
+        },
+
+        series: [{
+            name: '冊次',
+            data: [4334, 6503, 5777, 8968, 9701, 11931, 13733, 14175, 9596, 8194, 13224],
+            color: '#6a60d6'
+        }],
+
+        responsive: {
+            rules: [{
+                condition: {
+                    maxWidth: 500
+                },
+                chartOptions: {
+                    legend: {
+                        layout: 'horizontal',
+                        align: 'center',
+                        verticalAlign: 'bottom'
+                    }
+                }
+            }]
+        }
+
+    });
+    </script>
+    <script>
+    Highcharts.chart('container2', {
+
+        title: {
+            text: '借閱數量(冊)',
+            style: {
+                fontSize: '2em'
+            }
+        },
+
+        subtitle: {
+            text: '每月統計',
+            style: {
+                fontSize: '1.2em'
+            }
+        },
+
+        yAxis: {
+            title: {
+                text: '冊次',
+                fontSize: 13
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        xAxis: {
+            categories: ['2019/1', '2019/2', '2019/3', '2019/4', '2019/5', '2019/6',
+                '2019/7', '2019/8', '2019/9', '2019/10', '2019/11', '2019/12'
+            ]
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+
+        plotOptions: {
+            series: {
+                label: {
+                    connectorAllowed: false
+                }
+            }
+        },
+
+        series: [{
+            name: '冊次',
+            data: [4334, 6503, 5777, 8968, 9701, 11931, 13733, 14175, 9596, 8194, 13224],
+            color: '#6a60d6'
+        }],
+
+        responsive: {
+            rules: [{
+                condition: {
+                    maxWidth: 500
+                },
+                chartOptions: {
+                    legend: {
+                        layout: 'horizontal',
+                        align: 'center',
+                        verticalAlign: 'bottom'
+                    }
+                }
+            }]
+        }
+
+    });
+    </script>
 </body>
 
 </html>

@@ -29,6 +29,7 @@
     }
     .img-container {
         @include aspect-ratio(4, 3);
+        background: $color-gray;
         margin-bottom: .5em;
         &:after{
             content:"";
@@ -42,6 +43,7 @@
         }
         img{
             transition: .3s ease-in;
+            object-fit: cover;
         }
     }
     h2, h3, h4 {

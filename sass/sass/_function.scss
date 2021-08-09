@@ -9,6 +9,13 @@ $function_color:$color-lightGray;
     margin-right: .2em;
     display: inline-block;
 }
+
+.function_nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
 div.function {
     @include box-sizing;
     @extend %clearfix;

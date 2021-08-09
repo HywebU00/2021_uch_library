@@ -227,11 +227,10 @@
             a {
                 background: #f1f1f1;
                 display: inline-block;
-                padding: .65em 1em;
+                padding: .8em 2.5em;
                 transition: all .3s;
                 margin: 0 .2em;
                 min-width: 5.5em;
-                border-radius: 30px;
                 color: $color-word;
                 @include screen("mobile") {
                     margin: 0 .25em;
@@ -354,7 +353,7 @@
             &:after {
                 content: "";
                 border-radius: 50%;
-                background: darken($primaryColor, 10) url(../images/icon_instant_info_people.png) no-repeat center;
+                background: $primaryColor url(../images/icon_instant_info_people.png) no-repeat center;
                 background-size: 50%;
             }
         }
@@ -459,6 +458,7 @@
     }
 
     .img-container {
+        background: #fff;
         @include aspect-ratio(1, 1);
     }
 
@@ -588,7 +588,11 @@
         }
 
         .img-container {
-            @include aspect-ratio(2, 1)
+            @include aspect-ratio(2, 1);
+            background: #000;
+            img{
+                object-fit: cover;
+            }
         }
 
         .caption {

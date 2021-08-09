@@ -13,8 +13,12 @@
     <!-- slick css-->
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+    <!--pignose-->
+    <link rel="stylesheet" href="vendor/pg_calendar/css/pignose.calendar.min.css">
     <!-- hyUI css -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon">
 </head>
 
 <body>
@@ -216,52 +220,127 @@
                         </ul>
                     </div>
                 </div>
-                <!-- h2節點 -->
-                <h2 class="title">最新消息</h2>
-                <!-- LP Start -->
+                <h2 class="title">活動列表</h2>
                 <section class="lp">
-                    <!-- 文字列表 -->
-                    <div class="list">
+                    <form action="">
+                        <div class="search_grp">
+                            <div class="form_grp form_inline">
+                                <label for="selectSample" class="form_title">活動查詢：</label>
+                                <input name="username" id="mustSameAsId" type="text" accesskey="S" placeholder="活動查詢">
+                                <input name="" type="submit" title="查詢" value="查詢">
+                            </div>
+                            <div class="form_grp form_inline">
+                                <div class="form_title">起始日期：</div>
+                                <div class="form_content hasBtn">
+                                    <div class="datepick">
+                                        <input name="" type="date" value="" class="calendar" placeholder="開始日期">
+                                        <button class="btn"><i class="i_calendar_color"></i></button>
+                                    </div>
+                                    <div class="datepick">
+                                        <input name="" type="date" value="" class="calendar" placeholder="結束日期">
+                                        <button class="btn"><i class="i_calendar_color"></i></button>
+                                    </div>
+                                    <input name="" type="submit" title="進階查詢" value="進階查詢">
+                                </div>
+                            </div>
+                            <div class="check_grp form_inline">
+                                <div class="form_title">活動類別：</div>
+                                <label><input name="" type="checkbox" value="" checked="">全部</label>
+                                <label><input name="" type="checkbox" value="">藝文</label>
+                                <label><input name="" type="checkbox" value="">親子</label>
+                                <label><input name="" type="checkbox" value="">展覽</label>
+                                <label><input name="" type="checkbox" value="">說故事</label>
+                            </div>
+                            <div class="check_grp form_inline">
+                                <div class="form_title">活動狀態：</div>
+                                <label><input name="" type="checkbox" value="" checked="">全部</label>
+                                <label><input name="" type="checkbox" value="">報名中</label>
+                                <label><input name="" type="checkbox" value="">自由參加</label>
+                                <label><input name="" type="checkbox" value="">報名結束</label>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="activities_list">
                         <ul>
                             <li>
-                                <a href="#"><span class="num">1</span>【課程延期公告】</a>
-                                <time>2021-03-09</time>
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <span class="library_tag">標籤</span>
+                                        <div class="img-container">
+                                            <img src="https://via.placeholder.com/400x200?text=2:1">
+                                        </div>
+                                        <div class="caption">
+                                            <h3>親子說故事活動-小象能做的事</h3>
+                                            <ul class="time">
+                                                <li><span>活動日期：</span><time>2018-01-01</time><time>14:00~16:00</time></li>
+                                                <li><span>報名期限：</span><time>2018-01-01</time><time>17:00</time></li>
+                                            </ul>
+                                            <div class="status register">
+                                                <span>報名中</span><span class="people">66/80</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
                             </li>
                             <li>
-                                <a href="#"><span class="num">2</span> 因白鹿颱風登陸，本週六親子說故事活動暫停一次!因白鹿颱風登陸，本週六親子說故事活動暫停一次!因白鹿颱風登陸，本週六親子說故事活動暫停一次!因白鹿颱風登陸，本週六親子說故事活動暫停一次!</a>
-                                <time>2021-03-09</time>
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <span class="library_tag">標籤</span>
+                                        <div class="img-container">
+                                            <img src="images/demo/07.jpg" alt="">
+                                        </div>
+                                        <div class="caption">
+                                            <h3>漫畫家創意讀書會</h3>
+                                            <ul class="time">
+                                                <li><span>活動日期：</span><time>2018-01-01</time><time>14:00~16:00</time></li>
+                                                <li><span>報名期限：</span><time>2018-01-01</time><time>17:00</time></li>
+                                            </ul>
+                                            <div class="status full">
+                                                <span>額滿</span><span class="people">50/50</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
                             </li>
                             <li>
-                                <a href="#"><span class="num">3</span> 今年的中秋 用超擬真夢幻黏土甜點 療癒你的味蕾 </a>
-                                <time>2021-03-09</time>
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <span class="library_tag">標籤</span>
+                                        <div class="img-container">
+                                            <img src="images/demo/05.jpg" alt="">
+                                        </div>
+                                        <div class="caption">
+                                            <h3>親子說故事活動-小象能做的事</h3>
+                                            <ul class="time">
+                                                <li><span>活動日期：</span><time>2018-01-01</time><time>14:00~16:00</time></li>
+                                                <li><span>報名期限：</span><time>2018-01-01</time><time>17:00</time></li>
+                                            </ul>
+                                            <div class="status register">
+                                                <span>報名中</span><span class="people">66/80</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
                             </li>
                             <li>
-                                <a href="#"><span class="num">4</span>【課程延期公告】</a>
-                                <time>2021-03-09</time>
-                            </li>
-                            <li>
-                                <a href="#"><span class="num">5</span> 因白鹿颱風登陸，本週六親子說故事活動暫停一次!因白鹿颱風登陸，本週六親子說故事活動暫停一次!因白鹿颱風登陸，本週六親子說故事活動暫停一次!因白鹿颱風登陸，本週六親子說故事活動暫停一次!</a>
-                                <time>2021-03-09</time>
-                            </li>
-                            <li>
-                                <a href="#"><span class="num">6</span> 今年的中秋 用超擬真夢幻黏土甜點 療癒你的味蕾 </a>
-                                <time>2021-03-09</time>
-                            </li>
-                            <li>
-                                <a href="#"><span class="num">7</span>【課程延期公告】</a>
-                                <time>2021-03-09</time>
-                            </li>
-                            <li>
-                                <a href="#"><span class="num">8</span> 因白鹿颱風登陸，本週六親子說故事活動暫停一次!因白鹿颱風登陸，本週六親子說故事活動暫停一次!因白鹿颱風登陸，本週六親子說故事活動暫停一次!因白鹿颱風登陸，本週六親子說故事活動暫停一次!</a>
-                                <time>2021-03-09</time>
-                            </li>
-                            <li>
-                                <a href="#"><span class="num">9</span> 今年的中秋 用超擬真夢幻黏土甜點 療癒你的味蕾 </a>
-                                <time>2021-03-09</time>
-                            </li>
-                            <li>
-                                <a href="#"><span class="num">10</span> 午節休館公告：108/6/7(五)休館1日</a>
-                                <time>2021-03-09</time>
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <span class="library_tag">標籤</span>
+                                        <div class="img-container">
+                                            <img src="images/demo/10.jpg" alt="">
+                                        </div>
+                                        <div class="caption">
+                                            <h3>漫畫家創意讀書會</h3>
+                                            <ul class="time">
+                                                <li><span>活動日期：</span><time>2018-01-01</time><time>14:00~16:00</time></li>
+                                                <li><span>報名期限：</span><time>2018-01-01</time><time>17:00</time></li>
+                                            </ul>
+                                            <div class="status full">
+                                                <span>額滿</span><span class="people">50/50</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
                             </li>
                         </ul>
                     </div>

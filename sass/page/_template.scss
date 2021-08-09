@@ -75,12 +75,15 @@ body {
         content:"";
         display: block;
         position: absolute;
-        bottom: -350px;
+        top: calc(100% + 80px);
         right: -50px;
         background: url(../images/bg_deco1.png) no-repeat;
         background-size: contain;
         width: 130px;
         height: 130px;
+        @include screen('mobile'){
+            top: 100%;
+        }
     }
 
     @include screen('tablet'){
@@ -411,9 +414,9 @@ body {
         background-size: contain;
         width: 200px;
         height: 230px;
-        @include screen("tablet"){
-            content: none;
-        }
+        // @include screen("tablet"){
+        //     content: none;
+        // }
     }
     h2.title{
         &:before,
@@ -442,6 +445,7 @@ body {
     }
 
     >.container {
+        z-index: 2;
         @include gutter(); //gutter 代表左右要留白
     }
 
