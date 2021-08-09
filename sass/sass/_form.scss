@@ -469,7 +469,13 @@ input[type="button"],
     @include btn_setting($form-focus, #FFF);
 
     &.back {
-        background-color: $importantColor;
+        transition: .3s ease-in;
+        background-color: $color-lightGray;
+        color:$color-word-light;
+        &:hover{
+            background-color: darken($color-lightGray, 10);
+            color: $color-word;
+        }
     }
 }
 
