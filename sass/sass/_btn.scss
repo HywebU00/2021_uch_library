@@ -72,30 +72,30 @@ $btn-radius:2px;
 }
 //按鈕顏色
 //@include btn_setting(按鈕顏色,字的顏色);
-.btn-green {
-    @extend %btn;
-    @include btn_setting($color-green, #FFF);
-}
-.btn-blue {
-    @extend %btn;
-    @include btn_setting($color-blue, #FFF);
-}
-.btn-yellow {
-    @extend %btn;
-    @include btn_setting(lighten($color-yellow, 5), #FFF);
-}
-.btn-orange {
-    @extend %btn;
-    @include btn_setting(lighten($color-orange, 10), #FFF);
-}
-.btn-red {
-    @extend %btn;
-    @include btn_setting($color-red, #FFF);
-}
-.btn-purple {
-    @extend %btn;
-    @include btn_setting(lighten($color-purple, 5), #FFF);
-}
+// .btn-green {
+//     @extend %btn;
+//     @include btn_setting($color-green, #FFF);
+// }
+// .btn-blue {
+//     @extend %btn;
+//     @include btn_setting($color-blue, #FFF);
+// }
+// .btn-yellow {
+//     @extend %btn;
+//     @include btn_setting(lighten($color-yellow, 5), #FFF);
+// }
+// .btn-orange {
+//     @extend %btn;
+//     @include btn_setting(lighten($color-orange, 10), #FFF);
+// }
+// .btn-red {
+//     @extend %btn;
+//     @include btn_setting($color-red, #FFF);
+// }
+// .btn-purple {
+//     @extend %btn;
+//     @include btn_setting(lighten($color-purple, 5), #FFF);
+// }
 .btn-submit {
     @extend %btn;
     @include btn_setting($primaryColor, #FFF);
@@ -106,7 +106,7 @@ $btn-radius:2px;
 }
 .btn-primary {
     @extend %btn;
-    @include btn_setting($importantColor, #FFF);
+    @include btn_setting($primaryColor, #FFF);
 }
 .btn-secondary{
     @extend %btn;

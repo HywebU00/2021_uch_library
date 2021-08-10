@@ -13,6 +13,8 @@
     <!-- slick css-->
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+    <!--pignose-->
+    <link rel="stylesheet" href="vendor/pg_calendar/css/pignose.calendar.min.css">
     <!-- hyUI css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -203,204 +205,88 @@
             </section>
             <div class="container">
                 <div class="function_nav">
-                        <!-- breadcrumb路徑 -->
-                        <div class="breadcrumb">
-                            <ul>
-                                <li><a href="#">首頁</a></li>
-                                <li>活動列表</li>
-                            </ul>
-                        </div>
-                        <div class="function">
-                            <ul>
-                                <li class="back"><a href="javascript:history.back()">回上一頁</a></li>
-                            </ul>
-                        </div>
+                    <!-- breadcrumb路徑 -->
+                    <div class="breadcrumb">
+                        <ul>
+                            <li><a href="#">首頁</a></li>
+                            <li>節點</li>
+                        </ul>
                     </div>
-                <!-- h2節點 -->
-                <h2 class="title">學科指導服務</h2>
-                <!-- LP Start -->
+                    <div class="function">
+                        <ul>
+                            <li class="back"><a href="javascript:history.back()">回上一頁</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <h2 class="title">失物招領</h2>
                 <section class="lp">
                     <form action="">
-                        <div class="form service_select">
+                        <div class="search_grp">
                             <div class="form_grp form_inline">
+                                <div class="form_title">外觀描述：</div>
+                                <div class="form_content">
+                                    <textarea name="" id="" cols="30" rows="100%"></textarea>
+                                </div>
+                            </div>
+                            <div class="form_grp form_inline">
+                                <div class="form_title">遺失日期：</div>
+                                <div class="form_content">
+                                    <div class="datepick">
+                                        <input name="" type="date" value="" class="calendar">
+                                        <button class="btn"><i class="i_calendar_color"></i></button>
+                                    </div>
+                                    <div class="datepick">
+                                        <input name="" type="date" value="" class="calendar">
+                                        <button class="btn"><i class="i_calendar_color"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_grp form_inline">
+                                <label for="selectSample" class="form_title">物品類型：</label>
                                 <select name="" id="selectSample">
-                                    <option value="">依學院</option>
-                                    <option value="">選項二</option>
-                                    <option value="">選項三</option>
-                                    <option value="">選項四</option>
-                                </select>
-                                <select name="" id="selectSample">
-                                    <option value="">依系所</option>
-                                    <option value="">選項二</option>
-                                    <option value="">選項三</option>
-                                    <option value="">選項四</option>
-                                </select>
-                                <select name="" id="selectSample">
-                                    <option value="">依老師</option>
-                                    <option value="">選項二</option>
-                                    <option value="">選項三</option>
-                                    <option value="">選項四</option>
+                                    <option value="">皮夾</option>
+                                    <option value="">傘</option>
                                 </select>
                             </div>
+                            <div class="form_grp form_inline">
+                                <label for="selectSample" class="form_title">遺失地點：</label>
+                                <select name="" id="selectSample">
+                                    <option value="">全部</option>
+                                    <option value="">總館</option>
+                                    <option value="">吉安</option>
+                                    <option value="">新城</option>
+                                    <option value="">xxx</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-submit">查詢</button>
                         </div>
                     </form>
-                    <section class="college_grp">
-                        <h3>工程學院</h3>
-                        <div class="album_list">
-                            <ul>
-                                <li>
-                                    <div class="thumbnail">
-                                        <a href="#">
-                                            <div class="img-container">
-                                                <img src="images/demo/13.jpg">
-                                            </div>
-                                            <div class="caption">
-                                                <div class="department">電機系</div>
-                                                <div class="name">陳小華 老師</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="thumbnail">
-                                        <a href="#">
-                                            <div class="img-container">
-                                                <img src="https://via.placeholder.com/240x270">
-                                            </div>
-                                            <div class="caption">
-                                                <div class="department">電子系 Electronic Engineering</div>
-                                                <div class="name">陳世志 Shih-Chih, Chen 老師</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="thumbnail">
-                                        <a href="#">
-                                            <div class="img-container">
-                                                <img src="https://via.placeholder.com/240x270">
-                                            </div>
-                                            <div class="caption">
-                                                <div class="department">電機系</div>
-                                                <div class="name">陳小華 老師</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="thumbnail">
-                                        <a href="#">
-                                            <div class="img-container">
-                                                <img src="https://via.placeholder.com/240x270">
-                                            </div>
-                                            <div class="caption">
-                                                <div class="department">電機系</div>
-                                                <div class="name">陳小華 老師</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="thumbnail">
-                                        <a href="#">
-                                            <div class="img-container">
-                                                <img src="https://via.placeholder.com/170x190">
-                                            </div>
-                                            <div class="caption">
-                                                <div class="department">電機系</div>
-                                                <div class="name">陳小華 老師</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="thumbnail">
-                                        <a href="#">
-                                            <div class="img-container">
-                                                <img src="https://via.placeholder.com/170x190">
-                                            </div>
-                                            <div class="caption">
-                                                <div class="department">電機系</div>
-                                                <div class="name">陳小華 老師</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-                    <section class="college_grp">
-                        <h3>管理學院</h3>
-                        <div class="album_list">
-                            <ul>
-                                <li>
-                                    <div class="thumbnail">
-                                        <a href="#">
-                                            <div class="img-container">
-                                                <img src="https://via.placeholder.com/170x190">
-                                            </div>
-                                            <div class="caption">
-                                                <div class="department">電機系</div>
-                                                <div class="name">陳小華 老師</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="thumbnail">
-                                        <a href="#">
-                                            <div class="img-container">
-                                                <img src="https://via.placeholder.com/170x190">
-                                            </div>
-                                            <div class="caption">
-                                                <div class="department">電機系</div>
-                                                <div class="name">陳小華 老師</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="thumbnail">
-                                        <a href="#">
-                                            <div class="img-container">
-                                                <img src="https://via.placeholder.com/170x190">
-                                            </div>
-                                            <div class="caption">
-                                                <div class="department">電機系</div>
-                                                <div class="name">陳小華 老師</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="thumbnail">
-                                        <a href="#">
-                                            <div class="img-container">
-                                                <img src="https://via.placeholder.com/170x190">
-                                            </div>
-                                            <div class="caption">
-                                                <div class="department">電機系</div>
-                                                <div class="name">陳小華 老師</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="thumbnail">
-                                        <a href="#">
-                                            <div class="img-container">
-                                                <img src="https://via.placeholder.com/170x190">
-                                            </div>
-                                            <div class="caption">
-                                                <div class="department">電機系</div>
-                                                <div class="name">陳小華 老師</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
+                    <div class="lost_list">
+                        <table class="table_hover">
+                            <thead>
+                                <tr>
+                                    <th>編號</th>
+                                    <th>拾獲日期</th>
+                                    <th>外觀描述</th>
+                                    <th>拾獲地點</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2019/09/15</td>
+                                    <td>筆記本&黑色小袋</td>
+                                    <td>總館</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>2019/09/15</td>
+                                    <td>黑色耳機</td>
+                                    <td>總館</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </section>
                 <!-- LP End -->
             </div>
@@ -408,6 +294,7 @@
         <!-- fatfooter Start -->
         <section class="fatfooter">
             <div class="container">
+                <!-- <button type="button" name="收合" class="btn btn-fatfooter">OPEN</button> -->
                 <nav>
                     <ul>
                         <li><a href="#">讀者專區</a>
@@ -483,7 +370,7 @@
                     <p class="Copyright">
                         地址：320桃園市中壢區健行路229號<br>
                         電話：03-4581196轉3748～3758<br>
-                        <span class="update">更新日期：<em>2018/01/01</em></span>
+                        <span class="update">更新日期：<em>2021/01/01</em></span>
                         <span class="counter">瀏覽人次 : 87,073</span>
                     </p>
                     <div class="footer_icon">
@@ -527,6 +414,14 @@
     <script src="js/hyui.js"></script>
     <!-- 客製js -->
     <script src="js/customize.js"></script>
+    <script>
+    $(function() {
+        $('.calendar').pignoseCalendar({
+            lang: 'ch',
+
+        });
+    });
+    </script>
 </body>
 
 </html>
