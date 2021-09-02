@@ -3,7 +3,7 @@
     padding: .8em 0;
     font-size: .813em;
     @include screen('xs_mobile'){
-        padding-bottom: 0;
+        //padding-bottom: 0;
     }
     ul {
         @include li-reset;

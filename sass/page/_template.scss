@@ -543,9 +543,9 @@ body {
         }
     }
     .function_block{
-        padding: 5em 0;
+        padding: 5em 0 3em 0;
         @include screen("mobile"){
-            padding: 2em 0;
+            padding: 2em 0 0;
         }
         &:after{
             content:"";

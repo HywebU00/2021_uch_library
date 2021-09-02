@@ -258,4 +258,6 @@ $(function() {
     //         $('.reader_area').hide();
     //     });
     // }
+
+    $('.function_nav').appendTo('.function_block>.container')
 });
