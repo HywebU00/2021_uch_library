@@ -354,7 +354,7 @@
     .img-container {
         margin: 0px 15px;
         @include aspect-ratio(4, 3);
-        overflow: hidden;
+        background: $color-bg;
         img {
             object-fit: contain;
         }
@@ -407,6 +407,18 @@
                 bottom: 0 !important;
             }
         }
+    }
+    .link{
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        color:#fff;
+        background: rgba($secondaryColor, .9);
+        padding: .2em .5em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: .875em;
     }
 }
 //  slick燈箱
