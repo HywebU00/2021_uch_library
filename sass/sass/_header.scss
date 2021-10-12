@@ -135,6 +135,7 @@
 
         a {
             display: inline-block;
+            width: 100%;
 
             @include screen('mobile') {
                 width: 100%;

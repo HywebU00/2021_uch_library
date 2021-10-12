@@ -196,26 +196,6 @@ h3.title {
     .agree_grp {
         text-align: center;
     }
-
-    .back,
-    .next {
-        min-width: 120px;
-        padding: .65em 1.5em;
-        margin-bottom: 1em;
-        border: 0;
-    }
-
-    .back {
-        background: darken($color-gray, 10);
-
-        &:hover {
-            background: darken($color-gray, 20);
-        }
-    }
-
-    .next {
-        background: $primaryColor;
-    }
 }
 
 .share {
@@ -274,34 +254,6 @@ div.tag {
     }
 }
 
-.apply_form {
-    //@extend %bg_1;
-    margin: 0 auto;
-
-    @include screen('mobile') {
-        width: 100%;
-    }
-
-    input {
-        border: 1px solid #ccc;
-        background: #fff;
-    }
-
-    select {
-        width: auto;
-        min-width: 100px;
-    }
-}
-
-.apply_result {
-    td {
-        text-align: center;
-    }
-
-    .name {
-        text-align: left;
-    }
-}
 
 .participant {
     clear: both;
