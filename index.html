@@ -12,66 +12,78 @@
     <![endif]-->
     <!-- hyUI -->
     <link rel="stylesheet" href="css/style.css">
-<style>
-.demo_wrap {
-    max-width: 1000px;
-    margin: 0em auto 1em;
-    padding: 15px 15px 3em;
-    clear: both;
-}
-.demo_wrap h1 {
-    display: block;
-    margin: 0px auto;
-    max-width: 300px;
-    float: left;
-    margin-right: 1em
-}
-@media screen and (max-width:545px) {
-    .demo_wrap h1 {
-        max-width: 100%;
-        float: none;
-        text-align: center
-    }
-}
-.demo_wrap h1 img {
-    width: 300px
-}
-.num {
-    width: 12%
-}
-body {
-    counter-reset: num
-}
-table {
-    margin-bottom: 1em;
-    background: #fff;
-}
-table caption {
-    text-align: left;
-    font-weight: bold;
-    font-size: 1.25em;
-    padding: .5em 0;
-    color: #ff5050
-}
-tbody tr td:first-child:before {
-    counter-increment: num;
-    display: block;
-    text-align: center;
-    content: counters(num, ".") " "
-}
-tbody tr td:nth-child(2) {
-    width: 35%
-}
-.btn_grp{
-    text-align: right;
-}
-@media screen and (max-width:545px) {
-   .btn_grp{
-    text-align: center;
-}
-}
-</style>
+    <style>
+        .demo_wrap {
+            max-width: 1000px;
+            margin: 0em auto 1em;
+            padding: 15px 15px 3em;
+            clear: both;
+        }
+        
+        .demo_wrap h1 {
+            display: block;
+            margin: 0px auto;
+            max-width: 300px;
+            float: left;
+            margin-right: 1em
+        }
+        
+        @media screen and (max-width:545px) {
+            .demo_wrap h1 {
+                max-width: 100%;
+                float: none;
+                text-align: center
+            }
+        }
+        
+        .demo_wrap h1 img {
+            width: 300px
+        }
+        
+        .num {
+            width: 12%
+        }
+        
+        body {
+            counter-reset: num
+        }
+        
+        table {
+            margin-bottom: 1em;
+            background: #fff;
+        }
+        
+        table caption {
+            text-align: left;
+            font-weight: bold;
+            font-size: 1.25em;
+            padding: .5em 0;
+            color: #ff5050
+        }
+        
+        tbody tr td:first-child:before {
+            counter-increment: num;
+            display: block;
+            text-align: center;
+            content: counters(num, ".") " "
+        }
+        
+        tbody tr td:nth-child(2) {
+            width: 35%
+        }
+        
+        .btn_grp {
+            text-align: right;
+        }
+        
+        @media screen and (max-width:545px) {
+            .btn_grp {
+                text-align: center;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <div class="demo_wrap">
         <h1><img src="images/logo.png" alt=""></h1>
@@ -93,117 +105,171 @@ tbody tr td:nth-child(2) {
                     <tr>
                         <td></td>
                         <td>首頁</td>
-                        <td><a href="mp.html"></a></td>
+                        <td>
+                            <a href="mp.html"></a>
+                        </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td>節點頁</td>
-                        <td><a href="np.html"></a></td>
+                        <td>
+                            <a href="np.html"></a>
+                        </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td>文字列表頁(最新消息、活動類)</td>
-                        <td><a href="lp.html"></a></td>
+                        <td>
+                            <a href="lp.html"></a>
+                        </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td>文字列表頁(一般)</td>
-                        <td><a href="lp_list.html"></a></td>
+                        <td>
+                            <a href="lp_list.html"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>表格列表頁</td>
+                        <td>
+                            <a href="lp_table.html"></a>
+                        </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td>圖文列表頁(一般)</td>
-                        <td><a href="lp_list_photo.html"></a></td>
+                        <td>
+                            <a href="lp_list_photo.html"></a>
+                        </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td>圖文列表頁(書本)</td>
-                        <td><a href="lp_book.html"></a></td>
+                        <td>
+                            <a href="lp_book.html"></a>
+                        </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td>活動相簿列表頁</td>
-                        <td><a href="lp_album.html"></a></td>
+                        <td>
+                            <a href="lp_album.html"></a>
+                        </td>
                     </tr>
+
                     <tr>
-                        <td></td>
-                        <td>內容頁</td>
-                        <td><a href="cp.html"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>活動相簿內容頁</td>
-                        <td><a href="cp_album.html"></a></td>
-                    </tr>
-                   <tr>
                         <td></td>
                         <td>即時資訊列表頁</td>
-                        <td><a href="lp_chart.html"></a></td>
+                        <td>
+                            <a href="lp_chart.html"></a>
+                        </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td>活動列表頁</td>
-                        <td><a href="lp_activity.html"></a></td>
+                        <td>
+                            <a href="lp_activity.html"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>內容頁</td>
+                        <td>
+                            <a href="cp.html"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>活動相簿內容頁</td>
+                        <td>
+                            <a href="cp_album.html"></a>
+                        </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td>活動內容頁</td>
-                        <td><a href="activity01.html"></a></td>
+                        <td>
+                            <a href="activity01.html"></a>
+                        </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td>活動報名-個人資料蒐集同意書</td>
-                        <td><a href="activity02.html"></a></td>
+                        <td>
+                            <a href="activity02.html"></a>
+                        </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td>活動報名-報名表單</td>
-                        <td><a href="activity03.html"></a></td>
+                        <td>
+                            <a href="activity03.html"></a>
+                        </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td>活動報名-報名狀態查詢</td>
-                        <td><a href="activity04.html"></a></td>
+                        <td>
+                            <a href="activity04.html"></a>
+                        </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td>活動報名-報名狀態查詢-查詢結果</td>
-                        <td><a href="activity05.html"></a></td>
+                        <td>
+                            <a href="activity05.html"></a>
+                        </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td>活動報名-報名狀態查詢-查詢結果-詳細內容</td>
-                        <td><a href="activity06.html"></a></td>
+                        <td>
+                            <a href="activity06.html"></a>
+                        </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td>問卷調查列表頁</td>
-                        <td><a href="questionnaire01.html"></a></td>
+                        <td>
+                            <a href="questionnaire01.html"></a>
+                        </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td>問卷調查內容頁</td>
-                        <td><a href="questionnaire02.html"></a></td>
+                        <td>
+                            <a href="questionnaire02.html"></a>
+                        </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td>問卷調查結果頁</td>
-                        <td><a href="questionnaire03.html"></a></td>
+                        <td>
+                            <a href="questionnaire03.html"></a>
+                        </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td>失物招領列表頁</td>
-                        <td><a href="lost.html"></a></td>
+                        <td>
+                            <a href="lost.html"></a>
+                        </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td>網站地圖</td>
-                        <td><a href="sitemap.html"></a></td>
+                        <td>
+                            <a href="sitemap.html"></a>
+                        </td>
                     </tr>
-                     <tr>
+                    <tr>
                         <td></td>
                         <td>404 網站錯誤</td>
-                        <td><a href="404.html"></a></td>
+                        <td>
+                            <a href="404.html"></a>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -220,25 +286,27 @@ tbody tr td:nth-child(2) {
                     <tr>
                         <td></td>
                         <td>cp_外文期刊推薦</td>
-                        <td><a href="cp_外文期刊推薦.html"></a></td>
+                        <td>
+                            <a href="cp_外文期刊推薦.html"></a>
+                        </td>
                     </tr>
 
                 </tbody>
-            </table> 
+            </table>
         </div>
     </div>
-    <a href="javascript:;" class="scrollToTop" >回頁首</a>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="vendor/jquery.easing.min.js"></script>
     <script src="js/hyui.js"></script>
     <script src="js/customize.js"></script>
     <script>
-    $(function() {
-        $('tbody').find('a').each(function(index, el) {
-            var Link = $(this).attr('href');
-            $(this).text(Link);
-        });
-    })
+        $(function() {
+            $('tbody').find('a').each(function(index, el) {
+                var Link = $(this).attr('href');
+                $(this).text(Link);
+            });
+        })
     </script>
 </body>
 
