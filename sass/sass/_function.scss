@@ -10,14 +10,16 @@ $function_color:$color-lightGray;
     display: inline-block;
 }
 
-.function_nav{
+.function_nav {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
-    margin: 1em 0;
+    margin: 1em auto;
+    max-width: 1200px;
 }
+
 div.function {
     @include box-sizing;
     @extend %clearfix;
@@ -41,7 +43,7 @@ div.function {
                 &:focus {
                     background: darken($aHover, 0);
                     border-color: darken($aHover, 0);
-                    color:#fff;
+                    color: #fff;
                 }
             }
             // 回上一頁
@@ -71,6 +73,7 @@ div.function {
         }
     }
 }
+
 // 放進function_panel樣式
 .function_panel {
     .share {
@@ -82,7 +85,7 @@ div.function {
                 height: 60%;
                 top: 20%;
                 left: 20%;
-                background: url(../images/basic/icon_share.png) no-repeat center center  !important;
+                background: url(../images/basic/icon_share.png) no-repeat center center !important;
                 background-size: 24px !important;
             }
             text-indent:-9999px;

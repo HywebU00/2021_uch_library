@@ -150,76 +150,22 @@
         <div id="center" class="main innerpage">
             <!-- 內頁新增一個classname-->
             <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
-            <section class="function_block">
-                <div class="container">
-                    <div class="tabSet search wow fadeInLeft" data-wow-duration=".8s">
-                        <section class="search_tabs">
-                            <h2 class="tabItem active"><a href="javascript:;">資源探索服務</a></h2>
-                            <!--選到的頁籤項目-->
-                            <div class="tabContent search_content">
-                                <form action="">
-                                    <div class="form form_inline">
-                                        <div class="form_grp">
-                                            <label for="">搜尋</label>
-                                            <input name="username" id="" type="text" placeholder="請輸入關鍵字" accesskey="S">
-                                            <input name="" type="submit" title="查詢" value="查詢">
-                                        </div>
-                                    </div>
-                                </form>
-                                <p>可查詢電子期刊論文、文章、資料庫等</p>
-                            </div>
-                            <h2 class="tabItem"><a href="#">電子資源</a></h2>
-                            <div class="tabContent search_content">
-                                <form action="">
-                                    <div class="form form_inline">
-                                        <div class="form_grp">
-                                            <label for="">搜尋</label>
-                                            <input name="username" id="" type="text" placeholder="請輸入關鍵字" accesskey="S">
-                                            <input name="" type="submit" title="查詢" value="查詢">
-                                        </div>
-                                    </div>
-                                </form>
-                                <p>可查詢電子期刊論文、文章、資料庫等</p>
-                            </div>
-                            <h2 class="tabItem"><a href="#">圖書與視聽</a></h2>
-                            <div class="tabContent search_content">
-                                <form action="">
-                                    <div class="form form_inline">
-                                        <div class="form_grp">
-                                            <label for="">搜尋</label>
-                                            <input name="username" id="" type="text" placeholder="請輸入關鍵字" accesskey="S">
-                                            <input name="" type="submit" title="查詢" value="查詢">
-                                        </div>
-                                    </div>
-                                </form>
-                                <p>可查詢電子期刊論文、文章、資料庫等</p>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="info_block  wow fadeInRight">
-                        <div class="info_title">本日開館</div>
-                        <ul>
-                            <li>瀏覽人次：99999</li>
-                            <li>更新日期：2021/07/05</li>
-                        </ul>
-                    </div>
+            <div class="function_nav">
+                <!-- breadcrumb路徑 -->
+                <div class="breadcrumb">
+                    <ul>
+                        <li><a href="#">首頁</a></li>
+                        <li>節點</li>
+                    </ul>
                 </div>
-            </section>
+                <div class="function">
+                    <ul>
+                        <li class="back"><a href="javascript:history.back()">回上一頁</a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="container">
-                <div class="function_nav">
-                    <!-- breadcrumb路徑 -->
-                    <div class="breadcrumb">
-                        <ul>
-                            <li><a href="#">首頁</a></li>
-                            <li>節點</li>
-                        </ul>
-                    </div>
-                    <div class="function">
-                        <ul>
-                            <li class="back"><a href="javascript:history.back()">回上一頁</a></li>
-                        </ul>
-                    </div>
-                </div>
+
                 <h2 class="title">活動列表</h2>
                 <section class="lp">
                     <form action="">
@@ -459,8 +405,8 @@
                 <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="下方功能區塊">:::</a>
                 <div class="footer_info">
                     <p class="Copyright">
-                        地址：320桃園市中壢區健行路229號<br>
-                        電話：03-4581196轉3748～3758<br>
+                        地址：320桃園市中壢區健行路229號<br> 電話：03-4581196轉3748～3758
+                        <br>
                         <span class="update">更新日期：<em>2021/01/01</em></span>
                         <span class="counter">瀏覽人次 : 87,073</span>
                     </p>
@@ -495,12 +441,18 @@
     <!-- JQ -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <!-- 外掛 plugin js -->
-    <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
-    <script src="vendor/slick/slick.js "></script><!-- slick -->
-    <script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
-    <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
-    <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
-    <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+    <script src="vendor/jquery.easing.min.js"></script>
+    <!-- ease -->
+    <script src="vendor/slick/slick.js "></script>
+    <!-- slick -->
+    <script src="vendor/slick/slick-lightbox.js "></script>
+    <!-- slick lightbox -->
+    <script src="vendor/lazyload/lazyload.js"></script>
+    <!-- lazyload -->
+    <script src="vendor/picturefill/picturefill.min.js" async></script>
+    <!-- picturefill -->
+    <script src="vendor/scrolltable/jquery.scroltable.min.js"></script>
+    <!-- scrolltable -->
     <!-- hyUI -->
     <script src="js/hyui.js"></script>
     <!-- 客製js -->
